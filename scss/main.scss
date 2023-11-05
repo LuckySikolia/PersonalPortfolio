@@ -1,4 +1,6 @@
 $primary-font: Montserrat, sans-serif;
+$secondary-font: Hind Vadodara, sans-serif;
+
 
 $background-color: (
     "primary": #f7f7f7,
@@ -34,6 +36,19 @@ body {
     font-weight: map-get($font-weights, regular);
     line-height: 28px;
     font-size: 16px;
+
+    p {
+        font-family: $secondary-font;
+        font-weight: map-get($font-weights, regular);
+    }
+}
+//prevent heading from overlapping when screen collapse
+/* For screens wider than 768px */
+@media (max-width: 768px) {
+    body {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 header {
@@ -160,4 +175,76 @@ footer {
         height: 1px;
         background-color: map-get($background-color, primary);
     }   
+}
+
+
+.project-holder {
+    display: flex;
+    align-items: flex-end; 
+    width: 100%;
+    position: sticky;
+    flex-direction: row;
+    padding-left: 15%;
+    margin-top: -80px;
+}
+
+.intro-text {
+    position: relative;
+    display: flex;
+    margin-right: 5vw;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
+    z-index: 1;
+    will-change: transform;
+    transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    padding: 18% 0;
+
+    h2{
+        font-weight: map-get($font-weights, bold);
+        font-size: 50px ;
+    }
+
+    p{
+        margin-top: 0;
+        color: map-get($text-color, accent);
+    }
+}
+
+//marquee styling
+.marquee-horizontal {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: map-get($background-color, secondary);
+}
+
+.track-horizontal {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-horizontal 40s linear infinite;
+}
+
+.marquee-text{
+    color: map-get($text-color, secondary);
+
+}
+
+@keyframes marquee-horizontal {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
 }
