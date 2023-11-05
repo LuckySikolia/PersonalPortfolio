@@ -15,28 +15,20 @@ body {
 
 header {
     margin-top: 3%;
-    align-items: center;
+    display: block;
 }
 
 .nav-items {
     display: flex;
     margin-top: -3%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 2%;
+    padding-right: 5%;
     padding-left: 5%;
     padding-top: 3%;
     align-items: center;
-    width: 100%;
-
-    justify-content: space-between;
-    align-items: flex-end;
-    color: #000000;
 
     .nav-wrap {
-        vertical-align: middle;
         padding-top: 0;
-        
+        flex: 1;        
     }
 
     .nav-logo {
@@ -50,13 +42,19 @@ header {
     position: relative;
 }
 
-.nav-wrap{
-    align-items: center;
-    letter-spacing: 0;
+.nav-wrap {
     text-transform: uppercase;
-    
-    a{
-        color: #000000;
-        padding: 3%;
-    }
+    display: flex;
+    justify-content: flex-end;
 }
+
+// .nav-wrap{
+//     // align-items: center;
+//     letter-spacing: 0;
+//     text-transform: uppercase;
+    
+//     a{
+//         color: #000000;
+//         padding: 3%;
+//     }
+// }
