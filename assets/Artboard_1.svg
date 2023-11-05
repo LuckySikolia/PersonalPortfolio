@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f7f7;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        font-size: 190px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: FoglihtenNo06, FoglihtenNo06;
+      }
+
+      .cls-4 {
+        font-size: 550.85px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <rect class="cls-1" x="-3.05" y="-3.98" width="504.57" height="504.57"/>
+  </g>
+  <g id="Layer_1" data-name="Layer 1">
+    <text class="cls-4" transform="translate(35.85 432.11) scale(.93 1)"><tspan x="0" y="0">L</tspan></text>
+    <text class="cls-3" transform="translate(337.09 169.54) scale(1.31 1)"><tspan x="0" y="0">S</tspan></text>
+    <line class="cls-2" x1="452.07" y1="189.04" x2="344.05" y2="189.04"/>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <rect class="cls-2" x="17.11" y="17.8" width="459.68" height="459.68"/>
+  </g>
+</svg>
