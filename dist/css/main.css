@@ -43,4 +43,23 @@ header {
   text-transform: uppercase;
   display: flex;
   justify-content: flex-end;
+}
+
+.nav-links a {
+  padding-left: 1em;
+}
+
+a {
+  color: #100303;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+}
+a :active {
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  color: #808080;
+  cursor: zoom-in;
 }/*# sourceMappingURL=main.css.map */
