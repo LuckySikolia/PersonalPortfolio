@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #f7f7f7;
   min-height: 100%;
@@ -72,4 +76,19 @@ a:hover, a:focus {
 
 main {
   display: block;
+}
+
+footer {
+  background-color: #100303;
+  position: relative;
+  z-index: 9999;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5px;
+}
+
+.footer-bottom h6 {
+  color: #f7f7f7;
+  padding-top: 5px;
 }/*# sourceMappingURL=main.css.map */
