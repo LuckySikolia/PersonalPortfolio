@@ -1,13 +1,16 @@
+$background-color: #f7f7f7;
+$primary-font: Montserrat, sans-serif;
+$black-text-color: #100303;
+
 *{
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: $background-color;
     min-height: 100%;
     margin: 0;
-    //import google font Montserat
-    font-family: Montserrat, sans-serif;
+    font-family: $primary-font;
     font-weight: 400;
     line-height: 28px;
     font-size: 16px;
@@ -50,25 +53,29 @@ header {
 }
 
 .nav-links {
+    font-weight: 500;
     a {
         padding-left: 1em;
     }
 }
 
 a {
-    color: #100303;
+    color: $black-text-color;
     text-decoration: none;
     transition-duration: 0.2s;
     transition-delay: 0s;
+    font-size: 16px;
 
     :active{
         text-decoration: underline;
     }
+
 }
 
 a:hover, a:focus{
     color: #808080;
-    cursor: zoom-in;
+    outline: invert;
+    font-size: 20px;
 }
 
 // .nav-wrap{

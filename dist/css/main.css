@@ -45,6 +45,9 @@ header {
   justify-content: flex-end;
 }
 
+.nav-links {
+  font-weight: 500;
+}
 .nav-links a {
   padding-left: 1em;
 }
@@ -54,6 +57,7 @@ a {
   text-decoration: none;
   transition-duration: 0.2s;
   transition-delay: 0s;
+  font-size: 16px;
 }
 a :active {
   text-decoration: underline;
@@ -61,5 +65,6 @@ a :active {
 
 a:hover, a:focus {
   color: #808080;
-  cursor: zoom-in;
+  outline: invert;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
