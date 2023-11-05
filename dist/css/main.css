@@ -46,7 +46,8 @@ header {
 }
 
 .nav-links {
-  font-weight: 500;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
 }
 .nav-links a {
   padding-left: 1em;
@@ -67,4 +68,8 @@ a:hover, a:focus {
   color: #808080;
   outline: invert;
   font-size: 20px;
+}
+
+main {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

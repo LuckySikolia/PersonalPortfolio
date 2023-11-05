@@ -1,6 +1,17 @@
 $background-color: #f7f7f7;
 $primary-font: Montserrat, sans-serif;
-$black-text-color: #100303;
+
+$text-color: (
+    "primary": #100303,
+    "accent": #808080
+);
+
+$font-weights:(
+    "regular": 400,
+    "semi-bold": 500,
+    "bold": 600,
+    "extra-bold": 700
+);
 
 *{
     box-sizing: border-box;
@@ -11,7 +22,7 @@ body {
     min-height: 100%;
     margin: 0;
     font-family: $primary-font;
-    font-weight: 400;
+    font-weight: map-get($font-weights, regular);
     line-height: 28px;
     font-size: 16px;
 }
@@ -53,18 +64,21 @@ header {
 }
 
 .nav-links {
-    font-weight: 500;
+    font-weight: map-get($font-weights, bold);
+    font-family: $primary-font;
+    // font-display: swap;
     a {
         padding-left: 1em;
     }
 }
 
 a {
-    color: $black-text-color;
+    color: map-get($text-color, primary);
     text-decoration: none;
     transition-duration: 0.2s;
     transition-delay: 0s;
     font-size: 16px;
+    
 
     :active{
         text-decoration: underline;
@@ -73,18 +87,12 @@ a {
 }
 
 a:hover, a:focus{
-    color: #808080;
+    color: map-get($text-color, accent);
     outline: invert;
     font-size: 20px;
 }
 
-// .nav-wrap{
-//     // align-items: center;
-//     letter-spacing: 0;
-//     text-transform: uppercase;
-    
-//     a{
-//         color: #000000;
-//         padding: 3%;
-//     }
-// }
+main{
+    display: block;
+}
+
