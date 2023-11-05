@@ -88,7 +88,17 @@ footer {
   padding-bottom: 5px;
 }
 
+.content a {
+  color: #f7f7f7;
+  font-size: 16px;
+}
+
 .footer-bottom h6 {
   color: #f7f7f7;
-  padding-top: 5px;
+  margin-top: 0;
+}
+.footer-bottom .div-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #f7f7f7;
 }/*# sourceMappingURL=main.css.map */
