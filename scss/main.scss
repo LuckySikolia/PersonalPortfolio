@@ -51,8 +51,7 @@ header {
 
     .nav-wrap {
         padding-top: 0;
-        flex: 1;    
-        // gap: 1em;    
+        flex: 1;       
     }
 
     .nav-logo {
@@ -109,29 +108,56 @@ footer {
     position: relative;
     z-index: 9999;
     padding-top: 3%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-bottom: 5px;
+    display: block;
 }
 
-.content{
-    a{
-        color: map-get($text-color, secondary);
-        font-size: 16px;  
+.footer-top{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+
+    .socials{
+        flex: 1;
+
+        a {
+            padding: 5px;
+        }
     }
+
+    .content{
+        text-transform: uppercase;
+
+        a{
+            padding-left: 0.2rem;
+            color: map-get($text-color, secondary); 
+            font-size: 14px;
+        }
+    }
+}
+
+.footer-logo{
+    padding-right: 1%;
+}
+
+.socials{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer-bottom {
     h6{
         color: map-get($text-color, secondary);
         margin-top: 0;
+        font-weight: map-get($font-weights, semi-bold) ;
     }
 
-    .div-separator{
-    width: 100%;
-    height: 1px;
-    background-color: map-get($background-color, primary);
+    .div-separator {
+        width: 100%;
+        height: 1px;
+        background-color: map-get($background-color, primary);
     }   
 }
-
-

@@ -83,19 +83,46 @@ footer {
   position: relative;
   z-index: 9999;
   padding-top: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-bottom: 5px;
+  display: block;
 }
 
-.content a {
+.footer-top {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+}
+.footer-top .socials {
+  flex: 1;
+}
+.footer-top .socials a {
+  padding: 5px;
+}
+.footer-top .content {
+  text-transform: uppercase;
+}
+.footer-top .content a {
+  padding-left: 0.2rem;
   color: #f7f7f7;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.footer-logo {
+  padding-right: 1%;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-bottom h6 {
   color: #f7f7f7;
   margin-top: 0;
+  font-weight: 500;
 }
 .footer-bottom .div-separator {
   width: 100%;
