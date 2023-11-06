@@ -64,11 +64,9 @@ a {
   font-size: 16px;
   padding-left: 1em;
 }
-
 a:active {
   text-decoration: underline;
 }
-
 a:hover, a:focus {
   color: #808080;
   outline: invert;

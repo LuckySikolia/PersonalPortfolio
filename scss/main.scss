@@ -92,17 +92,18 @@ a {
     transition-delay: 0s;
     font-size: 16px;
     padding-left: 1em;  
+
+    &:active {
+        text-decoration: underline
+    }
+    
+    &:hover, &:focus {
+        color: map-get($text-color, accent);
+        outline: invert;
+        font-size: 20px;
+    }
 }
 
-a:active {
-    text-decoration: underline;
-}
-
-a:hover, a:focus{
-    color: map-get($text-color, accent);
-    outline: invert;
-    font-size: 20px;
-}
 
 main{
     display: block;
