@@ -1,0 +1,51 @@
+header {
+    margin-top: 3%;
+    display: block;
+}
+
+.nav-items {
+    @include flexCenter;
+    margin-top: -3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 3%;
+
+    .nav-wrap {
+        padding-top: 0;
+        flex: 1;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-end;       
+    }
+
+    .nav-logo {
+        padding: 0;
+        transform-style: preseve-3d;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.nav-links {
+    font-weight: map-get($font-weights, bold);
+    font-family: $primary-font;
+
+    a:active {
+        transition-duration: 0.2s;
+        transition-delay: 0s;
+        text-decoration: underline
+    }
+
+    a:hover {
+        color: map-get($text-color, accent);
+        outline: invert;
+        font-size: 20px;
+    }
+
+    a:focus {
+        color: map-get($text-color, accent);
+        outline: invert;
+        font-size: 20px;
+    }
+}
+
