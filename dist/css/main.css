@@ -20,13 +20,6 @@ body p {
   font-weight: 400;
 }
 
-/* For screens wider than 768px */
-@media (max-width: 768px) {
-  body {
-    width: 150px;
-    height: 150px;
-  }
-}
 header {
   margin-top: 3%;
   display: block;
@@ -43,29 +36,24 @@ header {
 .nav-items .nav-wrap {
   padding-top: 0;
   flex: 1;
-}
-.nav-items .nav-logo {
-  padding: 0;
-}
-
-.nav-logo {
-  transform-style: preserve-3d;
-  z-index: 1;
-  position: relative;
-}
-
-.nav-wrap {
   text-transform: uppercase;
   display: flex;
   justify-content: flex-end;
+}
+.nav-items .nav-logo {
+  padding: 0;
+  transform-style: preserve-3d;
+  z-index: 1;
+  position: relative;
 }
 
 .nav-links {
   font-weight: 600;
   font-family: Montserrat, sans-serif;
 }
-.nav-links a {
-  padding-left: 1em;
+.nav-links a:active {
+  transition-duration: 0.2s;
+  transition-delay: 0s;
 }
 
 a {
@@ -74,8 +62,10 @@ a {
   transition-duration: 0.2s;
   transition-delay: 0s;
   font-size: 16px;
+  padding-left: 1em;
 }
-a :active {
+
+a:active {
   text-decoration: underline;
 }
 
@@ -145,10 +135,10 @@ footer {
   display: flex;
   align-items: flex-end;
   width: 100%;
-  position: sticky;
   flex-direction: row;
   padding-left: 15%;
-  margin-top: -80px;
+  margin-top: -90px;
+  margin-bottom: -70px;
 }
 
 .intro-text {
@@ -163,7 +153,8 @@ footer {
   will-change: transform;
   transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
-  padding: 18% 0;
+  padding: 18% 2%;
+  padding-left: 2%;
 }
 .intro-text h2 {
   font-weight: 600;
@@ -204,5 +195,12 @@ footer {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+/* For screens wider than 768px */
+@media (max-width: 768px) {
+  body {
+    width: 150px;
+    height: 150px;
   }
 }/*# sourceMappingURL=main.css.map */

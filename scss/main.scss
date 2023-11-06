@@ -20,6 +20,8 @@ $font-weights:(
     "extra-bold": 700
 );
 
+
+
 *{
     box-sizing: border-box;
 }
@@ -42,14 +44,7 @@ body {
         font-weight: map-get($font-weights, regular);
     }
 }
-//prevent heading from overlapping when screen collapse
-/* For screens wider than 768px */
-@media (max-width: 768px) {
-    body {
-        width: 150px;
-        height: 150px;
-    }
-}
+
 
 header {
     margin-top: 3%;
@@ -66,31 +61,27 @@ header {
 
     .nav-wrap {
         padding-top: 0;
-        flex: 1;       
+        flex: 1;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-end;       
     }
 
     .nav-logo {
         padding: 0;
+        transform-style: preserve-3d;
+        z-index: 1;
+        position: relative;
     }
-}
-
-.nav-logo {
-    transform-style: preserve-3d;
-    z-index: 1;
-    position: relative;
-}
-
-.nav-wrap {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .nav-links {
     font-weight: map-get($font-weights, bold);
     font-family: $primary-font;
-    a {
-        padding-left: 1em;
+
+    a:active {
+        transition-duration: 0.2s;
+        transition-delay: 0s;
     }
 }
 
@@ -100,12 +91,11 @@ a {
     transition-duration: 0.2s;
     transition-delay: 0s;
     font-size: 16px;
-    
+    padding-left: 1em;  
+}
 
-    :active{
-        text-decoration: underline;
-    }
-
+a:active {
+    text-decoration: underline;
 }
 
 a:hover, a:focus{
@@ -146,7 +136,7 @@ footer {
     .content{
         text-transform: uppercase;
 
-        a{
+        a {
             padding-left: 0.2rem;
             color: map-get($text-color, secondary); 
             font-size: 14px;
@@ -182,10 +172,11 @@ footer {
     display: flex;
     align-items: flex-end; 
     width: 100%;
-    position: sticky;
+    // position: sticky;
     flex-direction: row;
     padding-left: 15%;
-    margin-top: -80px;
+    margin-top: -90px;
+    margin-bottom: -70px;
 }
 
 .intro-text {
@@ -200,7 +191,8 @@ footer {
     will-change: transform;
     transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    padding: 18% 0;
+    padding: 18% 2%;
+    padding-left: 2%;
 
     h2{
         font-weight: map-get($font-weights, bold);
@@ -236,7 +228,6 @@ footer {
 
 .marquee-text{
     color: map-get($text-color, secondary);
-
 }
 
 @keyframes marquee-horizontal {
@@ -246,5 +237,14 @@ footer {
   
     100% {
       transform: translateX(0%);
+    }
+}
+
+//prevent heading from overlapping when screen collapse
+/* For screens wider than 768px */
+@media (max-width: 768px) {
+    body {
+        width: 150px;
+        height: 150px;
     }
 }
