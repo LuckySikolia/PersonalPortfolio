@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -27,11 +29,11 @@ header {
 
 .nav-items {
   display: flex;
+  align-items: center;
   margin-top: -3%;
   padding-right: 5%;
   padding-left: 5%;
   padding-top: 3%;
-  align-items: center;
 }
 .nav-items .nav-wrap {
   padding-top: 0;
@@ -90,9 +92,9 @@ footer {
 
 .footer-top {
   display: flex;
+  align-items: center;
   width: 100%;
   max-width: 1200px;
-  align-items: center;
 }
 .footer-top .socials {
   flex: 1;
@@ -111,6 +113,9 @@ footer {
 
 .footer-logo {
   padding-right: 1%;
+}
+.footer-logo a {
+  padding: 0;
 }
 
 .socials {
@@ -151,33 +156,36 @@ footer {
   will-change: transform;
   transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
-  padding: 18% 2%;
+  padding-bottom: 20%;
   padding-left: 2%;
+  padding-right: 2%;
 }
-.intro-text h2 {
+.intro-text .intro-text-header {
   font-weight: 600;
   font-size: 50px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
-.intro-text p {
-  margin-top: 0;
+.intro-text .intro-text-paragraph {
+  margin-top: 10px;
   color: #808080;
 }
 
 .marquee-horizontal {
   display: flex;
+  align-items: center;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
   justify-content: flex-start;
-  align-items: center;
   background-color: #100303;
 }
 
 .track-horizontal {
-  position: relative;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  position: relative;
+  justify-content: flex-start;
   white-space: nowrap;
   will-change: transform;
   animation: marquee-horizontal 40s linear infinite;

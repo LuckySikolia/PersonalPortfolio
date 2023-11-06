@@ -1,33 +1,9 @@
-$primary-font: Montserrat, sans-serif;
-$secondary-font: Hind Vadodara, sans-serif;
+@import './resets';
+@import './variables';
 
-
-$background-color: (
-    "primary": #f7f7f7,
-    "secondary": #100303
-);
-
-$text-color: (
-    "primary": #100303,
-    "accent": #808080,
-    "secondary": #f7f7f7
-);
-
-$font-weights:(
-    "regular": 400,
-    "semi-bold": 500,
-    "bold": 600,
-    "extra-bold": 700
-);
-
-
-
-*{
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -45,19 +21,17 @@ body {
     }
 }
 
-
 header {
     margin-top: 3%;
     display: block;
 }
 
 .nav-items {
-    display: flex;
+    @include flexCenter;
     margin-top: -3%;
     padding-right: 5%;
     padding-left: 5%;
     padding-top: 3%;
-    align-items: center;
 
     .nav-wrap {
         padding-top: 0;
@@ -121,10 +95,9 @@ footer {
 }
 
 .footer-top{
-    display: flex;
+    @include flexCenter;
     width: 100%;
     max-width: 1200px;
-    align-items: center;
 
     .socials{
         flex: 1;
@@ -147,6 +120,10 @@ footer {
 
 .footer-logo{
     padding-right: 1%;
+
+    a {
+        padding: 0;
+    }
 }
 
 .socials{
@@ -192,36 +169,39 @@ footer {
     will-change: transform;
     transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
-    padding: 18% 2%;
+    // padding: 18% 2%;
+    padding-bottom: 20%;
     padding-left: 2%;
+    padding-right: 2%;
 
-    h2{
+    #{&}-header{
         font-weight: map-get($font-weights, bold);
         font-size: 50px ;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        // line-height: 2%;
     }
 
-    p{
-        margin-top: 0;
+    #{&}-paragraph{
+        margin-top: 10px;
         color: map-get($text-color, accent);
     }
 }
 
 //marquee styling
 .marquee-horizontal {
-    display: flex;
+    @include flexCenter;
     overflow: hidden;
     width: 100%;
     white-space: nowrap;
     justify-content: flex-start;
-    align-items: center;
     background-color: map-get($background-color, secondary);
 }
 
 .track-horizontal {
+    @include flexCenter;
     position: relative;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
     white-space: nowrap;
     will-change: transform;
     animation: marquee-horizontal 40s linear infinite;
