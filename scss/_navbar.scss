@@ -3,6 +3,11 @@ header {
     display: block;
 }
 
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
 .nav-items {
     @include flexCenter;
     margin-top: -3%;

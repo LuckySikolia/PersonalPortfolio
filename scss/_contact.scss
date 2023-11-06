@@ -1,0 +1,9 @@
+#contact{
+    padding: 200px;
+
+    #{&}-info{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+}
