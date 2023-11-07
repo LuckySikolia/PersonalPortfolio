@@ -52,12 +52,17 @@ header {
 }
 
 #contact {
-  padding: 200px;
+  margin-top: 195px;
+  margin-bottom: 200px;
 }
 #contact #contact-info {
   display: flex;
   align-content: center;
   flex-direction: column;
+}
+
+.contact-info {
+  text-align: center;
 }
 
 body {

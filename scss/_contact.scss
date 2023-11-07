@@ -1,5 +1,6 @@
 #contact{
-    padding: 200px;
+    margin-top: 195px;
+    margin-bottom: 200px;
 
     #{&}-info{
         display: flex;
@@ -7,3 +8,8 @@
         flex-direction: column;
     }
 }
+
+.contact-info {
+    text-align: center;
+}
+
