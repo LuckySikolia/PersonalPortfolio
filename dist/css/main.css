@@ -64,6 +64,25 @@ header {
 .contact-info {
   text-align: center;
 }
+.contact-info .contact-info-main {
+  font-weight: 700;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+.contact-info-sub {
+  font-size: 13px;
+}
+.contact-info-links a:hover {
+  color: #808080;
+  outline: invert;
+  font-size: 20px;
+}
+.contact-info-links a:focus {
+  color: #808080;
+  outline: invert;
+  font-size: 20px;
+}
 
 body {
   background-color: #f7f7f7;
