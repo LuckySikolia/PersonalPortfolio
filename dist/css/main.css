@@ -84,6 +84,82 @@ header {
   font-size: 20px;
 }
 
+#southern-front {
+  padding-top: 0px;
+  padding-left: 20%;
+  padding-right: 15%;
+  padding-bottom: 100px;
+}
+
+.project-summary {
+  padding-bottom: 50px;
+}
+.project-summary .project-summary-heading {
+  display: block;
+  font-weight: 700;
+}
+.project-summary .project-summary-heading h1 {
+  padding-bottom: 30px;
+  letter-spacing: 2px;
+  font-size: 40px;
+  line-height: 80%;
+}
+.project-summary .project-summary-outline h3 {
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  font-size: 26px;
+  line-height: 28px;
+}
+.project-summary .project-summary-outline p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.project-summary .project-summary-role {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.project-summary .project-summary-role .wrapper {
+  max-width: 1200px;
+  grid-column-gap: 10px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.item1, .item2, .item3, .item4 {
+  border-left: 1px solid grey;
+  padding: 5px;
+}
+
+.item4 {
+  border-right: 1px solid grey;
+}
+
+.item1-role, .item2-project, .item3-timeline, .item4-tools {
+  padding: 15px;
+}
+.item1-role p, .item2-project p, .item3-timeline p, .item4-tools p {
+  padding-top: 10px;
+  font-size: 14px;
+  padding-right: 10px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.div-section {
+  border-top: 3px solid #ebe9e9;
+  padding: 40px 30px 0;
+  margin: 0 130px;
+  align-items: center;
+  display: flex;
+}
+
 body {
   background-color: #f7f7f7;
   min-height: 100%;
