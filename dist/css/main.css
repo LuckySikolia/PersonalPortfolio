@@ -171,14 +171,14 @@ p, li {
   display: flex;
 }
 
-.main-top {
+.main-top-header {
   justify-content: center;
   align-items: flex-end;
   display: flex;
   position: relative;
   margin-bottom: 80px;
 }
-.main-top img {
+.main-top-header img {
   width: 100%;
   height: 600px;
   image-rendering: auto;
