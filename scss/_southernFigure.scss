@@ -69,7 +69,15 @@
 
 }
 
-h5{
+//change text font inside grid
+.project-summary-role {
+    p {
+        font-family: $primary-font;
+        font-size: 24px;
+    }
+}
+
+h4{
     padding-bottom: 0px;
     // letter-spacing: 1px;
     font-size: 1.188rem;
@@ -78,11 +86,11 @@ h5{
     // font-family: Helvetica, sans-serif;
 }
 
-p, li {
-    // font-size: 1.500rem;
-    // line-height: 28px;
-    font-family: $secondary-font;
-}
+// p, li {
+//     // font-size: 1.500rem;
+//     // line-height: 28px;
+//     font-family: $secondary-font;
+// }
 
 .item1, .item2, .item3, .item4 {
     border-left: 1px solid grey;
@@ -140,3 +148,78 @@ p, li {
 //     font-weight: 400;
 //     font-family: $tertiary-font;
 // }
+
+//first section (research)
+.research-stage {
+    padding-bottom: 50px;
+
+    #{&}-intro {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: map-get($font-weights, semi-bold);
+    }
+
+    #{&}-body {
+        h5 {
+            letter-spacing: 0.2px;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 2rem;
+            color: #582a2d;
+            margin-bottom: -0.7rem;
+            
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 28px;
+            font-family: $secondary-font;
+            font-size: 1.30rem;
+            line-height: 2.25rem;
+            margin-top: 1.25rem;
+            // margin-bottom: 2.05rem;
+            font-weight: 300;
+        }
+    }
+}
+
+
+//first section (synthesize)
+.synthesize-stage {
+    padding-bottom: 50px;
+
+    #{&}-intro {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: map-get($font-weights, semi-bold);
+    }
+
+    #{&}-body {
+        h5 {
+            letter-spacing: 0.2px;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 2rem;
+            color: #582a2d;
+            margin-bottom: -0.7rem;
+            
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 28px;
+            font-family: $secondary-font;
+            font-size: 1.30rem;
+            line-height: 2.25rem;
+            margin-top: 1.25rem;
+            // margin-bottom: 2.05rem;
+            font-weight: 300;
+        }
+    }
+}
