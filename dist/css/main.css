@@ -110,10 +110,9 @@ header {
 .project-summary .project-summary-outline p {
   font-size: 16px;
   line-height: 28px;
-  font-family: "EB Garamond", serif;
+  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
   font-size: 1.5rem;
   line-height: 2.25rem;
-  font-weight: 300;
 }
 .project-summary .project-summary-role {
   max-width: 100%;
@@ -142,7 +141,7 @@ h5 {
 p, li {
   font-size: 1.5rem;
   line-height: 28px;
-  font-family: "EB Garamond", serif;
+  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
 }
 
 .item1, .item2, .item3, .item4 {
@@ -187,16 +186,6 @@ p, li {
   image-rendering: auto;
 }
 
-.intro {
-  padding-top: 20px;
-  color: #74393d;
-  padding-bottom: 3px;
-  font-size: 3.438rem;
-  line-height: 4.5rem;
-  font-weight: 400;
-  font-family: "Bebas Neue", sans-serif;
-}
-
 body {
   background-color: #f7f7f7;
   min-height: 100%;
@@ -207,7 +196,7 @@ body {
   font-size: 16px;
 }
 body p {
-  font-family: "Hind Vadodara", sans-serif;
+  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
   font-weight: 400;
 }
 
@@ -222,6 +211,10 @@ a {
 
 main {
   display: block;
+}
+
+.main-top {
+  flex-direction: column;
 }
 
 footer {

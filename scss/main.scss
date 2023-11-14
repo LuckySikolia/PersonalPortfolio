@@ -39,6 +39,10 @@ main{
     display: block;
 }
 
+.main-top {
+    flex-direction: column;
+}
+
 footer {
     background-color: map-get($background-color, secondary);
     position: relative;
