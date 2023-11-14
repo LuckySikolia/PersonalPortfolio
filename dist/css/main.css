@@ -107,13 +107,18 @@ header {
   font-weight: 600;
   text-align: center;
 }
+.project-summary .project-summary-outline h3 {
+  letter-spacing: 1px;
+  font-size: 26px;
+  line-height: 28px;
+}
 .project-summary .project-summary-outline p {
   font-size: 16px;
   line-height: 28px;
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 2.25rem;
-  margin-top: 2.25rem;
+  margin-top: 1.25rem;
   margin-bottom: 2.25rem;
   font-weight: 300;
 }
