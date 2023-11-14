@@ -13,9 +13,13 @@
 
         h1{
             padding-bottom: 30px;
-            letter-spacing: 2px;
-            font-size: 40px;
-            line-height: 80%;
+            // letter-spacing: 2px;
+            letter-spacing: -.02em;
+            font-size: 4.875rem;;
+            font-family: Helvetica, sans-serif;
+            line-height: 100%;
+            font-weight: map-get($font-weights, bold);
+            text-align: center;
         }
     }
 
@@ -30,6 +34,10 @@
         p {
             font-size: 16px;
             line-height: 28px;
+            font-family: $secondary-font2;
+            font-size: 1.500rem;
+            line-height: 2.25rem;
+            font-weight: 300;
         }
     }
 
@@ -58,16 +66,19 @@
 
 }
 
-h3{
-    padding-bottom: 5px;
-    letter-spacing: 1px;
-    font-size: 26px;
-    line-height: 28px;
+h5{
+    padding-bottom: 0px;
+    // letter-spacing: 1px;
+    font-size: 1.188rem;
+    line-height: 2.25rem;
+    font-weight: map-get($font-weights, bold);
+    // font-family: Helvetica, sans-serif;
 }
 
-p {
-    font-size: 16px;
+p, li {
+    font-size: 1.500rem;
     line-height: 28px;
+    font-family: $secondary-font2;
 }
 
 .item1, .item2, .item3, .item4 {
@@ -115,3 +126,14 @@ p {
     }
 }
 
+.intro {
+    padding-top: 20px;
+    color: #74393d;
+    padding-bottom: 3px;
+    // letter-spacing: 1px;
+    font-size: 3.438rem;
+    // line-height: 26px;
+    line-height: 4.5rem;
+    font-weight: 400;
+    font-family: $tertiary-font;
+}
