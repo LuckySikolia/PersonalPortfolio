@@ -137,19 +137,8 @@ h4{
     }
 }
 
-// .intro {
-//     padding-top: 20px;
-//     color: #74393d;
-//     padding-bottom: 3px;
-//     // letter-spacing: 1px;
-//     font-size: 3.438rem;
-//     // line-height: 26px;
-//     line-height: 4.5rem;
-//     font-weight: 400;
-//     font-family: $tertiary-font;
-// }
 
-//first section (research)
+//section (research)
 .research-stage {
     padding-bottom: 50px;
 
@@ -174,8 +163,6 @@ h4{
         }
 
         p {
-            font-size: 16px;
-            line-height: 28px;
             font-family: $secondary-font;
             font-size: 1.30rem;
             line-height: 2.25rem;
@@ -187,7 +174,7 @@ h4{
 }
 
 
-//first section (synthesize)
+// section (synthesize)
 .synthesize-stage {
     padding-bottom: 50px;
 
@@ -211,9 +198,189 @@ h4{
             
         }
 
-        p {
-            font-size: 16px;
+        p, ol, ul {
+            // font-size: 16px;
+            // line-height: 28px;
+            font-family: $secondary-font;
+            font-size: 1.30rem;
+            line-height: 2.25rem;
+            margin-top: 1.25rem;
+            // margin-bottom: 2.05rem;
+            font-weight: 300;
+        }
+
+        ol, ul {
+            padding: 0 50px;
+            padding-right: 60px;
+        }
+    }
+}
+
+
+//section (ideate)
+.ideate-stage {
+    padding-bottom: 50px;
+    img {
+        max-width: 800px;
+        max-height: 500px;
+    }
+
+    #{&}-intro {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: map-get($font-weights, semi-bold);
+    }
+
+    #{&}-body {
+        h5 {
+            letter-spacing: 0.2px;
+            font-size: 18px;
             line-height: 28px;
+            margin-top: 2rem;
+            color: #582a2d;
+            margin-bottom: -0.7rem;
+            
+        }
+
+        p {
+            // font-size: 16px;
+            // line-height: 28px;
+            font-family: $secondary-font;
+            font-size: 1.30rem;
+            line-height: 2.25rem;
+            margin-top: 1.25rem;
+            // margin-bottom: 2.05rem;
+            font-weight: 300;
+        }
+
+        figcaption {
+            font-size: 12px;
+        }
+    }
+}
+
+
+//section (prototype)
+.prototyping-stage {
+    padding-bottom: 50px;
+    img {
+        max-width: 800px;
+        max-height: 500px;
+    }
+
+    #{&}-intro {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: map-get($font-weights, semi-bold);
+    }
+
+    #{&}-body {
+        h5 {
+            letter-spacing: 0.2px;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 2rem;
+            color: #582a2d;
+            margin-bottom: -0.7rem;
+            
+        }
+
+        p {
+            // font-size: 16px;
+            // line-height: 28px;
+            font-family: $secondary-font;
+            font-size: 1.30rem;
+            line-height: 2.25rem;
+            margin-top: 1.25rem;
+            // margin-bottom: 2.05rem;
+            font-weight: 300;
+        }
+
+        figcaption {
+            font-size: 12px;
+        }
+    }
+}
+
+//section (testing)
+.testing-stage {
+    padding-bottom: 50px;
+    img {
+        max-width: 800px;
+        max-height: 500px;
+    }
+
+    #{&}-intro {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: map-get($font-weights, semi-bold);
+    }
+
+    #{&}-body {
+        h5 {
+            letter-spacing: 0.2px;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 2rem;
+            color: #582a2d;
+            margin-bottom: -0.7rem;
+            
+        }
+
+        p {
+            // font-size: 16px;
+            // line-height: 28px;
+            font-family: $secondary-font;
+            font-size: 1.30rem;
+            line-height: 2.25rem;
+            margin-top: 1.25rem;
+            // margin-bottom: 2.05rem;
+            font-weight: 300;
+        }
+
+        figcaption {
+            font-size: 12px;
+        }
+    }
+}
+
+//section (conclusion)
+.conclusion-stage {
+    padding-bottom: 50px;
+
+
+    #{&}-intro {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-family: $primary-font;
+        font-weight: map-get($font-weights, semi-bold);
+    }
+
+    #{&}-body {
+        h5 {
+            letter-spacing: 0.2px;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 2rem;
+            color: #582a2d;
+            margin-bottom: -0.7rem;
+            
+        }
+
+        p {
+            // font-size: 16px;
+            // line-height: 28px;
             font-family: $secondary-font;
             font-size: 1.30rem;
             line-height: 2.25rem;

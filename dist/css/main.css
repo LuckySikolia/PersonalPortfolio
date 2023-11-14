@@ -213,8 +213,6 @@ h4 {
   margin-bottom: -0.7rem;
 }
 .research-stage .research-stage-body p {
-  font-size: 16px;
-  line-height: 28px;
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.3rem;
   line-height: 2.25rem;
@@ -241,9 +239,140 @@ h4 {
   color: #582a2d;
   margin-bottom: -0.7rem;
 }
-.synthesize-stage .synthesize-stage-body p {
-  font-size: 16px;
+.synthesize-stage .synthesize-stage-body p, .synthesize-stage .synthesize-stage-body ol, .synthesize-stage .synthesize-stage-body ul {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 2.25rem;
+  margin-top: 1.25rem;
+  font-weight: 300;
+}
+.synthesize-stage .synthesize-stage-body ol, .synthesize-stage .synthesize-stage-body ul {
+  padding: 0 50px;
+  padding-right: 60px;
+}
+
+.ideate-stage {
+  padding-bottom: 50px;
+}
+.ideate-stage img {
+  max-width: 800px;
+  max-height: 500px;
+}
+.ideate-stage .ideate-stage-intro {
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.ideate-stage .ideate-stage-body h5 {
+  letter-spacing: 0.2px;
+  font-size: 18px;
   line-height: 28px;
+  margin-top: 2rem;
+  color: #582a2d;
+  margin-bottom: -0.7rem;
+}
+.ideate-stage .ideate-stage-body p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 2.25rem;
+  margin-top: 1.25rem;
+  font-weight: 300;
+}
+.ideate-stage .ideate-stage-body figcaption {
+  font-size: 12px;
+}
+
+.prototyping-stage {
+  padding-bottom: 50px;
+}
+.prototyping-stage img {
+  max-width: 800px;
+  max-height: 500px;
+}
+.prototyping-stage .prototyping-stage-intro {
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.prototyping-stage .prototyping-stage-body h5 {
+  letter-spacing: 0.2px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 2rem;
+  color: #582a2d;
+  margin-bottom: -0.7rem;
+}
+.prototyping-stage .prototyping-stage-body p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 2.25rem;
+  margin-top: 1.25rem;
+  font-weight: 300;
+}
+.prototyping-stage .prototyping-stage-body figcaption {
+  font-size: 12px;
+}
+
+.testing-stage {
+  padding-bottom: 50px;
+}
+.testing-stage img {
+  max-width: 800px;
+  max-height: 500px;
+}
+.testing-stage .testing-stage-intro {
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.testing-stage .testing-stage-body h5 {
+  letter-spacing: 0.2px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 2rem;
+  color: #582a2d;
+  margin-bottom: -0.7rem;
+}
+.testing-stage .testing-stage-body p {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 2.25rem;
+  margin-top: 1.25rem;
+  font-weight: 300;
+}
+.testing-stage .testing-stage-body figcaption {
+  font-size: 12px;
+}
+
+.conclusion-stage {
+  padding-bottom: 50px;
+}
+.conclusion-stage .conclusion-stage-intro {
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.conclusion-stage .conclusion-stage-body h5 {
+  letter-spacing: 0.2px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 2rem;
+  color: #582a2d;
+  margin-bottom: -0.7rem;
+}
+.conclusion-stage .conclusion-stage-body p {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-size: 1.3rem;
   line-height: 2.25rem;
