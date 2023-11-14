@@ -139,8 +139,6 @@ h5 {
 }
 
 p, li {
-  font-size: 1.5rem;
-  line-height: 28px;
   font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
 }
 
@@ -215,6 +213,9 @@ main {
 
 .main-top {
   flex-direction: column;
+}
+.main-top img {
+  width: auto;
 }
 
 footer {
