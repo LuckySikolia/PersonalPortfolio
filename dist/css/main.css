@@ -110,9 +110,12 @@ header {
 .project-summary .project-summary-outline p {
   font-size: 16px;
   line-height: 28px;
-  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
-  font-size: 1.5rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1rem;
   line-height: 2.25rem;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  font-weight: 300;
 }
 .project-summary .project-summary-role {
   max-width: 100%;
@@ -139,7 +142,7 @@ h5 {
 }
 
 p, li {
-  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
 
 .item1, .item2, .item3, .item4 {
@@ -194,7 +197,7 @@ body {
   font-size: 16px;
 }
 body p {
-  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 400;
 }
 
