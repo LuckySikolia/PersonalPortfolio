@@ -41,12 +41,12 @@ header {
   text-decoration: underline;
 }
 .nav-links a:hover {
-  color: #808080;
+  color: #696969;
   outline: invert;
   font-size: 20px;
 }
 .nav-links a:focus {
-  color: #808080;
+  color: #696969;
   outline: invert;
   font-size: 20px;
 }
@@ -74,12 +74,12 @@ header {
   font-size: 13px;
 }
 .contact-info-links a:hover {
-  color: #808080;
+  color: #696969;
   outline: invert;
   font-size: 20px;
 }
 .contact-info-links a:focus {
-  color: #808080;
+  color: #696969;
   outline: invert;
   font-size: 20px;
 }
@@ -99,7 +99,7 @@ header {
   font-weight: 700;
 }
 .project-summary .project-summary-heading h1 {
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   letter-spacing: -0.02em;
   font-size: 4.875rem;
   font-family: Helvetica, sans-serif;
@@ -144,13 +144,6 @@ header {
   font-size: 24px;
 }
 
-h4 {
-  padding-bottom: 0px;
-  font-size: 1.188rem;
-  line-height: 2.25rem;
-  font-weight: 600;
-}
-
 .item1, .item2, .item3, .item4 {
   border-left: 1px solid grey;
   padding: 5px;
@@ -185,12 +178,19 @@ h4 {
   align-items: flex-end;
   display: flex;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .main-top-header img {
   width: 100%;
-  height: 600px;
+  height: 20%;
   image-rendering: auto;
+}
+
+.design-process h3 {
+  letter-spacing: 1px;
+  font-size: 26px;
+  line-height: 28px;
+  padding-bottom: 20px;
 }
 
 .research-stage {
@@ -387,7 +387,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 20px;
 }
 body p {
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -503,7 +503,7 @@ footer {
 }
 .intro-text .intro-text-paragraph {
   margin-top: 10px;
-  color: #808080;
+  color: #696969;
 }
 
 .marquee-horizontal {
