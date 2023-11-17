@@ -191,6 +191,19 @@ header {
   line-height: 28px;
   padding-bottom: 20px;
 }
+.design-process figcaption {
+  font-size: 12px;
+}
+.design-process figure {
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+.design-process img {
+  max-width: 800px;
+  max-height: 500px;
+}
 
 .research-stage {
   padding-bottom: 50px;
@@ -253,10 +266,6 @@ header {
 .ideate-stage {
   padding-bottom: 50px;
 }
-.ideate-stage img {
-  max-width: 800px;
-  max-height: 500px;
-}
 .ideate-stage .ideate-stage-intro {
   font-size: 32px;
   letter-spacing: 1px;
@@ -280,22 +289,9 @@ header {
   margin-top: 1.25rem;
   font-weight: 300;
 }
-.ideate-stage .ideate-stage-body figcaption {
-  font-size: 12px;
-}
-.ideate-stage .ideate-stage-body figure {
-  padding-left: 5%;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  text-align: center;
-}
 
 .prototyping-stage {
   padding-bottom: 50px;
-}
-.prototyping-stage img {
-  max-width: 800px;
-  max-height: 500px;
 }
 .prototyping-stage .prototyping-stage-intro {
   font-size: 32px;
@@ -320,22 +316,9 @@ header {
   margin-top: 1.25rem;
   font-weight: 300;
 }
-.prototyping-stage .prototyping-stage-body figcaption {
-  font-size: 12px;
-}
-.prototyping-stage .prototyping-stage-body figure {
-  padding-left: 5%;
-  padding-top: 3%;
-  padding-bottom: 1%;
-  text-align: center;
-}
 
 .testing-stage {
   padding-bottom: 50px;
-}
-.testing-stage img {
-  max-width: 800px;
-  max-height: 500px;
 }
 .testing-stage .testing-stage-intro {
   font-size: 32px;
@@ -359,9 +342,6 @@ header {
   line-height: 2.25rem;
   margin-top: 1.25rem;
   font-weight: 300;
-}
-.testing-stage .testing-stage-body figcaption {
-  font-size: 12px;
 }
 
 .conclusion-stage {
