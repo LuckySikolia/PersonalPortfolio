@@ -256,6 +256,7 @@ header {
 .ideate-stage img {
   max-width: 800px;
   max-height: 500px;
+  padding-left: 10%;
 }
 .ideate-stage .ideate-stage-intro {
   font-size: 32px;
@@ -290,6 +291,7 @@ header {
 .prototyping-stage img {
   max-width: 800px;
   max-height: 500px;
+  padding-left: 10%;
 }
 .prototyping-stage .prototyping-stage-intro {
   font-size: 32px;
