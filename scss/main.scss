@@ -117,8 +117,7 @@ footer {
     // position: sticky;
     flex-direction: row;
     padding-left: 15%;
-    margin-top: -90px;
-    margin-bottom: -70px;
+    margin-top: -70px;
 }
 
 .intro-text {
@@ -134,21 +133,26 @@ footer {
     transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     // padding: 18% 2%;
-    padding-bottom: 20%;
+    padding-bottom: 18%;
     padding-left: 2%;
     padding-right: 2%;
 
     #{&}-header{
-        font-weight: map-get($font-weights, bold);
-        font-size: 50px ;
+        font-weight: map-get($font-weights, extra-bold);
+        font-family: $secondary-font2;
+        font-size: 70px;
         margin-bottom: 5px;
-        padding-bottom: 5px;
+        padding-bottom: 25px;
+        letter-spacing: 1px;
+        
         // line-height: 2%;
     }
 
     #{&}-paragraph{
         margin-top: 10px;
-        color: map-get($text-color, accent);
+        color: map-get($text-color, primary);
+        font-size: 20px;
+        line-height: 30px;
     }
 }
 
@@ -193,3 +197,37 @@ footer {
         height: 150px;
     }
 }
+
+
+
+
+
+//code for project section
+.projects-section{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+    transition: #f7f7f7 .3s;
+    display: block;
+} 
+
+.project-page-container {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    min-height: 0;
+    margin: 25px auto 0;
+    display: block;
+    position: relative;
+
+    .halfcard-holder {
+    width: 100vw;
+    height: 60vh;
+    flex-direction: row;
+    display: flex;
+    }
+
+    
+}
+

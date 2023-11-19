@@ -195,7 +195,7 @@ header {
   font-size: 12px;
 }
 .design-process figure {
-  padding-left: 4%;
+  padding-left: 3%;
   padding-top: 3%;
   padding-bottom: 1%;
   text-align: center;
@@ -383,6 +383,17 @@ header {
   font-weight: 300;
 }
 
+.video-interactive-prototype {
+  padding-bottom: 50px;
+  padding-left: 3.5%;
+}
+.video-interactive-prototype video {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  max-height: 500px;
+  max-width: 800px;
+}
+
 body {
   background-color: #f7f7f7;
   min-height: 100%;
@@ -478,8 +489,7 @@ footer {
   width: 100%;
   flex-direction: row;
   padding-left: 15%;
-  margin-top: -90px;
-  margin-bottom: -70px;
+  margin-top: -70px;
 }
 
 .intro-text {
@@ -494,19 +504,23 @@ footer {
   will-change: transform;
   transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
-  padding-bottom: 20%;
+  padding-bottom: 18%;
   padding-left: 2%;
   padding-right: 2%;
 }
 .intro-text .intro-text-header {
-  font-weight: 600;
-  font-size: 50px;
+  font-weight: 700;
+  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
+  font-size: 70px;
   margin-bottom: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
+  letter-spacing: 1px;
 }
 .intro-text .intro-text-paragraph {
   margin-top: 10px;
-  color: #696969;
+  color: #100303;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .marquee-horizontal {
@@ -547,4 +561,28 @@ footer {
     width: 150px;
     height: 150px;
   }
+}
+.projects-section {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 0;
+  transition: #f7f7f7 0.3s;
+  display: block;
+}
+
+.project-page-container {
+  width: 100%;
+  max-width: none;
+  margin-top: 0;
+  min-height: 0;
+  margin: 25px auto 0;
+  display: block;
+  position: relative;
+}
+.project-page-container .halfcard-holder {
+  width: 100vw;
+  height: 60vh;
+  flex-direction: row;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
