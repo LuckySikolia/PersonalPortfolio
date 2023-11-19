@@ -594,6 +594,9 @@ footer {
   flex-direction: row;
   display: flex;
 }
+.project-page-container .halfcard-holder a {
+  padding-left: 0;
+}
 .project-page-container .w-inline-block {
   max-width: 100%;
   display: inline-block;

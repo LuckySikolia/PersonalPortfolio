@@ -231,10 +231,14 @@ footer {
     position: relative;
 
     .halfcard-holder {
-    width: 100vw;
-    height: 60vh;
-    flex-direction: row;
-    display: flex;
+        width: 100vw;
+        height: 60vh;
+        flex-direction: row;
+        display: flex;
+
+        a {
+            padding-left: 0;
+        }
     }
 
     .w-inline-block {
