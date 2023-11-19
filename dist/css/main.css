@@ -570,6 +570,14 @@ footer {
   transition: #f7f7f7 0.3s;
   display: block;
 }
+.projects-section .projectcard-half {
+  width: 50vw;
+  height: 100%;
+  background-image: url(/assets/sf-cover-image.png);
+  background-size: cover;
+  display: flex;
+  position: relative;
+}
 
 .project-page-container {
   width: 100%;
@@ -585,4 +593,8 @@ footer {
   height: 60vh;
   flex-direction: row;
   display: flex;
+}
+.project-page-container .w-inline-block {
+  max-width: 100%;
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */
