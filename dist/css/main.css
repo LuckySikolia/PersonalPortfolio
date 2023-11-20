@@ -203,7 +203,6 @@ header {
   white-space: normal;
   -o-object-fit: fill;
      object-fit: fill;
-  display: block;
   align-items: center;
 }
 .project-image-summary .image-group-right .project-image-summary .image-group-right h3, .project-image-summary .image-group-right .project-image-summary .image-group-left-text h3, .project-image-summary .image-group-left .project-image-summary .image-group-right h3, .project-image-summary .image-group-left .project-image-summary .image-group-left-text h3 {
@@ -220,7 +219,7 @@ header {
 }
 
 .image-group-right-text, .image-group-left-text {
-  padding-top: 50vh;
+  padding-top: 50%;
 }
 .image-group-right-text p, .image-group-left-text p {
   width: 100%;

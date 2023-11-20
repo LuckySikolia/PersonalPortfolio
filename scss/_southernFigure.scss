@@ -152,6 +152,7 @@
     margin-bottom: 0;
     position: relative;
     margin-top: 20%;
+    
 
     #{&}-text {
         margin-top: 30px;
@@ -160,7 +161,7 @@
         // margin-bottom: 30px;
         white-space: normal;
         object-fit: fill;
-        display: block;
+        // display: inline-block;   //changed from block
         align-items: center;
         // vertical-align: middle;
 
@@ -206,9 +207,10 @@
 }
 
 .image-group-right-text, .image-group-left-text {
-    // vertical-align: middle;
     // align-items: center;
-    padding-top: 50vh;
+    padding-top: 50%;
+    // display: inline-block;   //changed from block;
+    // vertical-align: middle;
 
     p {
         width: 100%;
