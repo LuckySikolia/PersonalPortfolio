@@ -580,6 +580,10 @@ footer {
   display: flex;
   position: relative;
 }
+.projects-section .project-name {
+  display: block;
+  margin-bottom: 10px;
+}
 
 .project-page-container {
   width: 100%;
@@ -620,4 +624,5 @@ footer {
 }
 .project-name .project-subtitle {
   padding-bottom: 20px;
+  letter-spacing: 0;
 }/*# sourceMappingURL=main.css.map */

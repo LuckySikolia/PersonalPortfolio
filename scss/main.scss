@@ -223,6 +223,11 @@ footer {
         display: flex;
         position: relative;
     }
+
+    .project-name {
+        display: block;
+        margin-bottom: 10px;
+    }
 } 
 
 .project-page-container {
@@ -269,6 +274,7 @@ footer {
 
     .project-subtitle {
         padding-bottom: 20px;
+        letter-spacing: 0;
     }
 }
 
