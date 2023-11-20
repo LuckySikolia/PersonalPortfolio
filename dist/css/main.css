@@ -185,6 +185,49 @@ header {
   image-rendering: auto;
 }
 
+.project-image-summary .image-group-right, .project-image-summary .image-group-left {
+  display: grid;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 50px;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 2fr;
+  grid-auto-columns: 1fr;
+  margin-bottom: 0;
+  position: relative;
+  margin-top: 20%;
+}
+.project-image-summary .image-group-right .project-image-summary .image-group-right, .project-image-summary .image-group-right .project-image-summary .image-group-left-text, .project-image-summary .image-group-left .project-image-summary .image-group-right, .project-image-summary .image-group-left .project-image-summary .image-group-left-text {
+  margin-top: 30px;
+  letter-spacing: 2px;
+  white-space: normal;
+  -o-object-fit: fill;
+     object-fit: fill;
+  display: block;
+  align-items: center;
+}
+.project-image-summary .image-group-right .project-image-summary .image-group-right h3, .project-image-summary .image-group-right .project-image-summary .image-group-left-text h3, .project-image-summary .image-group-left .project-image-summary .image-group-right h3, .project-image-summary .image-group-left .project-image-summary .image-group-left-text h3 {
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1em;
+}
+.project-image-summary .image-group-right .project-image-summary .image-group-right, .project-image-summary .image-group-right .project-image-summary .image-group-left-image, .project-image-summary .image-group-left .project-image-summary .image-group-right, .project-image-summary .image-group-left .project-image-summary .image-group-left-image {
+  display: block;
+}
+
+.image-group-right-image img, .image-group-left-image img {
+  max-width: 500px;
+}
+
+.image-group-right-text, .image-group-left-text {
+  padding-top: 50vh;
+}
+.image-group-right-text p, .image-group-left-text p {
+  width: 100%;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
 .design-process h3 {
   letter-spacing: 1px;
   font-size: 26px;
