@@ -547,6 +547,7 @@ footer {
 
 .marquee-text {
   color: #f7f7f7;
+  font-size: 12px;
 }
 
 @keyframes marquee-horizontal {
@@ -616,13 +617,16 @@ footer {
 }
 .project-name .project-title {
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   border-bottom: 2px #100303;
   padding-bottom: 0;
   line-height: 26px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 .project-name .project-subtitle {
   padding-bottom: 20px;
   letter-spacing: 0;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
