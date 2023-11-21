@@ -151,7 +151,7 @@
     grid-auto-columns: 1fr;
     margin-bottom: 0;
     position: relative;
-    margin-top: 20%;
+    margin-top: 10%;
     
 
     #{&}-text {
@@ -226,7 +226,6 @@
 
 
 
-
 .design-process{
     h3{
         letter-spacing: 1px;
@@ -241,15 +240,16 @@
     }
 
     figure {
-        padding-left: 3%;
+        padding-left: 2%;
         padding-top: 3%;
         padding-bottom: 1%;
         text-align: center;
     }
 
     img {
-        max-width: 800px;
-        max-height: 500px;
+        // max-width: 900px;
+        max-width: 55vw;
+        // max-height: 700px;
         // padding-left: 10%;
     }
 }
@@ -341,41 +341,6 @@
         }
     }
 }
-
-
-
-
-//grid showing principles
-// reconsider removing grid principles
-// .synthesize-stage-body-bottom {
-//     .focus-principles {
-//         img {
-//             max-width: 800px;
-//             max-height: 500px;
-//             // padding-left: 10%;
-//         }
-//     }
-// }
-
-
-//     // grid code
-//     // .principles-grid-wrapper{
-//     //         // width: 100%;
-//     //         background-color: #d9d9d9;
-//     //         max-width: 1200px;
-//     //         grid-column-gap: 10px;
-//     //         // grid-row-gap: 16px;
-//     //         // border-top: 2px solid #000;
-//     //         // border-bottom: 2px solid #000;
-//     //         grid-template-rows: auto;
-//     //         grid-template-columns: 1fr 1fr;
-//     //         grid-auto-columns: 1fr 1fr;
-//     //         // margin-left: auto;
-//     //         // margin-right: auto;
-//     //         // padding-bottom: 0;
-//     //         display: grid;
-//     // }
-
 
 
 
