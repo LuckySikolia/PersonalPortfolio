@@ -108,7 +108,7 @@ header {
 }
 .project-summary .project-summary-outline h3 {
   letter-spacing: 1px;
-  font-size: 26px;
+  font-size: 42px;
   line-height: 28px;
 }
 .project-summary .project-summary-outline p {
@@ -229,15 +229,14 @@ header {
 
 .design-process h3 {
   letter-spacing: 1px;
-  font-size: 26px;
+  font-size: 42px;
   line-height: 28px;
   padding-bottom: 20px;
 }
 .design-process figcaption {
-  font-size: 12px;
+  font-size: 18px;
 }
 .design-process figure {
-  padding-left: 2%;
   padding-top: 3%;
   padding-bottom: 1%;
   text-align: center;
@@ -247,21 +246,21 @@ header {
 }
 
 .research-stage {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .research-stage .research-stage-intro {
   letter-spacing: 1px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  margin-bottom: -1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
   text-decoration: underline;
 }
 .research-stage .research-stage-body h5 {
   letter-spacing: 0.2px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 28px;
   margin-top: 2rem;
   color: #582a2d;
@@ -269,28 +268,28 @@ header {
 }
 .research-stage .research-stage-body p {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
   font-weight: 300;
 }
 
 .analysis-stage {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .analysis-stage .analysis-stage-intro {
   letter-spacing: 1px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  margin-bottom: -1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
   text-decoration: underline;
 }
 .analysis-stage .analysis-stage-body h5 {
   letter-spacing: 0.2px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 28px;
   margin-top: 2rem;
   color: #582a2d;
@@ -298,7 +297,7 @@ header {
 }
 .analysis-stage .analysis-stage-body p, .analysis-stage .analysis-stage-body ol, .analysis-stage .analysis-stage-body ul {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
   font-weight: 300;
@@ -307,23 +306,26 @@ header {
   padding: 0 50px;
   padding-right: 60px;
 }
+.analysis-stage .analysis-stage-body li {
+  padding-bottom: 10px;
+}
 
 .ideate-stage {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .ideate-stage .ideate-stage-intro {
   letter-spacing: 1px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  margin-bottom: -1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
   text-decoration: underline;
 }
 .ideate-stage .ideate-stage-body h5 {
   letter-spacing: 0.2px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 28px;
   margin-top: 2rem;
   color: #582a2d;
@@ -331,28 +333,28 @@ header {
 }
 .ideate-stage .ideate-stage-body p {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
   font-weight: 300;
 }
 
 .prototyping-stage {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .prototyping-stage .prototyping-stage-intro {
   letter-spacing: 1px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  margin-bottom: -1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
   text-decoration: underline;
 }
 .prototyping-stage .prototyping-stage-body h5 {
   letter-spacing: 0.2px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 28px;
   margin-top: 2rem;
   color: #582a2d;
@@ -360,57 +362,64 @@ header {
 }
 .prototyping-stage .prototyping-stage-body p {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
   font-weight: 300;
 }
 
 .testing-stage {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .testing-stage .testing-stage-intro {
   letter-spacing: 1px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  margin-bottom: -1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
   text-decoration: underline;
 }
 .testing-stage .testing-stage-body h5 {
   letter-spacing: 0.2px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 28px;
   margin-top: 2rem;
   color: #582a2d;
   margin-bottom: -0.7rem;
 }
-.testing-stage .testing-stage-body p {
+.testing-stage .testing-stage-body p, .testing-stage .testing-stage-body ol, .testing-stage .testing-stage-body ul {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
   font-weight: 300;
 }
+.testing-stage .testing-stage-body ol, .testing-stage .testing-stage-body ul {
+  padding: 0 50px;
+  padding-right: 60px;
+}
+.testing-stage .testing-stage-body li {
+  padding-bottom: 10px;
+}
 
 .conclusion-stage {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .conclusion-stage .conclusion-stage-intro {
   letter-spacing: 1px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
-  margin-bottom: -1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
   text-decoration: underline;
 }
 .conclusion-stage .conclusion-stage-body h5 {
   letter-spacing: 0.2px;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 28px;
   margin-top: 2rem;
   color: #582a2d;
@@ -418,7 +427,7 @@ header {
 }
 .conclusion-stage .conclusion-stage-body p {
   font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
   font-weight: 300;
