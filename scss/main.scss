@@ -37,6 +37,10 @@ a {
 
 main{
     display: block;
+
+    .main-top {
+        margin-top: -4.5%;
+    }
 }
 
 .main-top {
@@ -121,7 +125,7 @@ footer {
     // position: sticky;
     flex-direction: row;
     padding-left: 15%;
-    margin-top: -70px;
+    // margin-top: -70px; this code interrupts the functionality of the links in the header/navbar by covering it
 }
 
 .intro-text {
@@ -312,4 +316,4 @@ footer {
       display: flex;
       justify-content: space-between;
     }
-  }
+}

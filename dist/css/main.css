@@ -492,6 +492,9 @@ a {
 main {
   display: block;
 }
+main .main-top {
+  margin-top: -4.5%;
+}
 
 .main-top {
   flex-direction: column;
@@ -563,7 +566,6 @@ footer {
   width: 100%;
   flex-direction: row;
   padding-left: 15%;
-  margin-top: -70px;
 }
 
 .intro-text {
