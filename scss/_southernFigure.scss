@@ -464,3 +464,60 @@
 }
 
 
+// //make page responive
+// /* Styles for smartphones (max-width 576px) */
+// @media (max-width: 576px) {
+//     .main-top-header {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 5px 30px 0;
+//       width: 100%;
+//     }
+// }
+
+// /* Styles for tablets (min-width 577px and max-width 768px) */
+// @media (min-width: 577px) and (max-width: 768px) {
+//     .main-top-header {
+//       flex-direction: row;
+//       justify-content: space-between;
+//       width: 100%;
+//     }
+// }
+
+// /* Styles for desktops (min-width 769px) */
+// @media (min-width: 769px) {
+//     .main-top-header {
+//       display: flex;
+//       justify-content: space-between;
+//       width: 100%;
+//     }
+// }
+
+
+
+
+
+
+// @media (max-width: 576px) {
+//     #southern-front {
+//       flex-direction: column;
+//       align-items: flex-start;
+//       padding: 5px 30px 0;
+//     }
+// }
+
+// /* Styles for tablets (min-width 577px and max-width 768px) */
+// @media (min-width: 577px) and (max-width: 768px) {
+//     #southern-front {
+//       flex-direction: row;
+//       justify-content: space-between;
+//     }
+// }
+
+// /* Styles for desktops (min-width 769px) */
+// @media (min-width: 769px) {
+//     #southern-front {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+// }
