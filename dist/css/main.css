@@ -491,9 +491,7 @@ a {
 
 main {
   display: block;
-}
-main .main-top {
-  margin-top: -4.5%;
+  position: relative;
 }
 
 .main-top {
