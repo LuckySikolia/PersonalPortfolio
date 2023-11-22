@@ -496,9 +496,15 @@ main {
 
 .main-top {
   flex-direction: column;
+  position: relative;
 }
 .main-top img {
   width: auto;
+  margin-top: -45px;
+}
+.main-top .project-holder {
+  position: relative;
+  margin-bottom: -30px;
 }
 
 footer {
