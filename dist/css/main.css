@@ -69,9 +69,6 @@ header {
   .nav-logo {
     margin-top: 10%;
   }
-  .img {
-    height: 10%;
-  }
 }
 /* Styles for tablets (min-width 577px and max-width 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
