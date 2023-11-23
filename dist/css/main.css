@@ -64,6 +64,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
   }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-wrap {
+    padding-left: 70%;
+  }
 }
 /* Styles for desktops (min-width 769px) */
 @media (min-width: 769px) {
