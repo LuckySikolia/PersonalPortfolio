@@ -494,7 +494,7 @@ footer {
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
-  min-width: 75vh;
+  min-width: 80vh;
   flex: 0 0 auto;
   bottom: 0;
 }
