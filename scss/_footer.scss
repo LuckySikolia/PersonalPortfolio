@@ -1,6 +1,6 @@
 footer {
     background-color: map-get($background-color, secondary);
-    position: fixed;
+    position: relative;
     z-index: 9999;
     padding-top: 3%;
     padding-left: 15%;
@@ -10,8 +10,10 @@ footer {
     display: flex;
     flex-direction: column;
     // min-height: 100vh;
-    min-width: 85vh;
+    min-width: 75vh;
     flex: 0 0 auto;
+
+    bottom: 0;
     
 }
 
