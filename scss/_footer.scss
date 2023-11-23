@@ -10,15 +10,15 @@ footer {
     display: flex;
     flex-direction: column;
     // min-height: 100vh;
+    min-width: 80vh;
     flex: 0 0 auto;
-    min-width: 100%;
     
 }
 
 .footer-top{
     @include flexCenter;
     min-width: 100%;
-    max-width: 1200px;
+    // max-width: 1200px;
     // background-color: map-get($background-color, secondary);
 
     .socials{
@@ -78,7 +78,9 @@ footer {
 
     footer {
         width: 100%;
+        margin: 0;
     }
+
     .footer-top, .footer-bottom {
       flex-direction: row;
     //   align-items: center;
@@ -93,10 +95,12 @@ footer {
         justify-content: space-between;
         background-color: #100303;
         flex-direction: row;
+        // padding-left: 50%;
     }
 
     .socials{
         background-color: #100303;
+        // padding-left: 40%;
     }
 }
 

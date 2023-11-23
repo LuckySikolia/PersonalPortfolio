@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -495,15 +494,14 @@ footer {
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
+  min-width: 80vh;
   flex: 0 0 auto;
-  min-width: 100%;
 }
 
 .footer-top {
   display: flex;
   align-items: center;
   min-width: 100%;
-  max-width: 1200px;
 }
 .footer-top .socials {
   flex: 1;
@@ -543,6 +541,7 @@ footer {
 @media (max-width: 577px) {
   footer {
     width: 100%;
+    margin: 0;
   }
   .footer-top, .footer-bottom {
     flex-direction: row;
