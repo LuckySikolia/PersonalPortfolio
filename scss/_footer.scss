@@ -11,7 +11,7 @@ footer {
     flex-direction: column;
     // min-height: 100vh;
     min-width: 85vh;
-    flex:1;
+    // flex:1;
 
     bottom: 0;
     
@@ -81,6 +81,7 @@ footer {
     footer {
         width: 100%;
         margin: 0;
+        display: fixed;
     }
 
     .footer-top, .footer-bottom {
