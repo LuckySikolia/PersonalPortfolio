@@ -92,7 +92,7 @@ header {
 }
 #contact {
   margin-top: 225px;
-  margin-bottom: 225px;
+  margin-bottom: 200px;
 }
 #contact #contact-info {
   display: flex;
@@ -587,6 +587,7 @@ main {
   display: block;
   position: relative;
   min-width: 80vh;
+  min-height: auto;
 }
 
 .main-top {
@@ -752,7 +753,6 @@ main {
   .main-top, .projects-section {
     flex-direction: column;
     align-items: flex-start;
-    padding: 5px 30px 0;
   }
   .marquee-horizontal {
     flex-direction: row;
