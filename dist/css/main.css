@@ -57,6 +57,9 @@ header {
     align-items: flex-start;
     padding: 5px 30px 0;
   }
+  .nav-wrap {
+    padding-left: 15%;
+  }
 }
 /* Styles for tablets (min-width 577px and max-width 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
