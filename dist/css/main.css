@@ -586,6 +586,7 @@ a {
 main {
   display: block;
   position: relative;
+  min-width: 80vh;
 }
 
 .main-top {
@@ -756,6 +757,7 @@ main {
   .marquee-horizontal {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
 }
 /* Styles for tablets (min-width 577px and max-width 768px) */

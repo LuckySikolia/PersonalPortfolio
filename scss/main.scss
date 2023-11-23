@@ -41,6 +41,7 @@ a {
 main{
     display: block;
     position: relative;
+    min-width: 80vh;
 }
 
 .main-top {
@@ -244,6 +245,7 @@ main{
     .marquee-horizontal {
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 }
 
