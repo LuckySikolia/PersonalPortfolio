@@ -43,13 +43,16 @@ main{
     position: relative;
 
 
-    min-width: 80vh;
-    min-height: auto;
+    // min-width: 80vh;
+    // min-height: auto;
 }
 
 .main-top {
+    display: flex;
     flex-direction: column;
     position: relative;
+    
+    min-width: 110vh;
 
     img {
         width: auto;
@@ -68,7 +71,9 @@ main{
 .project-holder {
     display: flex;
     align-items: flex-end; 
-    width: 100%;
+
+    // width: 100%;
+
     // position: sticky;
     flex-direction: row;
     padding-left: 15%;

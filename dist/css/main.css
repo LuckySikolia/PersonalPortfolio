@@ -586,13 +586,13 @@ a {
 main {
   display: block;
   position: relative;
-  min-width: 80vh;
-  min-height: auto;
 }
 
 .main-top {
+  display: flex;
   flex-direction: column;
   position: relative;
+  min-width: 110vh;
 }
 .main-top img {
   width: auto;
@@ -606,7 +606,6 @@ main {
 .project-holder {
   display: flex;
   align-items: flex-end;
-  width: 100%;
   flex-direction: row;
   padding-left: 15%;
 }
