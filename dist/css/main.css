@@ -767,6 +767,9 @@ main {
   .project-holder {
     padding-left: 0;
   }
+  .projects-section {
+    display: flex;
+  }
 }
 /* Styles for tablets (min-width 577px and max-width 768px) */
 @media (min-width: 577px) and (max-width: 768px) {

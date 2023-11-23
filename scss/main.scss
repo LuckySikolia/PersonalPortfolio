@@ -266,6 +266,11 @@ main{
         
     }
 
+    // this code may or may not change alignment of several projects on one page when resized for mobile 
+    .projects-section {
+        display: flex;
+    }
+
     // main {
     //     min-height: 100vh;
     // }
