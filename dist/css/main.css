@@ -760,6 +760,9 @@ main {
     justify-content: space-between;
     width: 100%;
   }
+  .main-top {
+    padding: 0;
+  }
   .project-holder {
     padding-left: 0;
   }
