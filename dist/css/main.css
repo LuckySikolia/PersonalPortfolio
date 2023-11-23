@@ -748,10 +748,14 @@ main {
 
 /* Styles for smartphones (max-width 576px) */
 @media (max-width: 576px) {
-  .main-top, .projects-section, .marquee-horizontal {
+  .main-top, .projects-section {
     flex-direction: column;
     align-items: flex-start;
     padding: 5px 30px 0;
+  }
+  .marquee-horizontal {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 /* Styles for tablets (min-width 577px and max-width 768px) */
