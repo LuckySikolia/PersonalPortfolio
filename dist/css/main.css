@@ -760,6 +760,9 @@ main {
     justify-content: space-between;
     width: 100%;
   }
+  .project-holder {
+    padding-left: 0;
+  }
 }
 /* Styles for tablets (min-width 577px and max-width 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
