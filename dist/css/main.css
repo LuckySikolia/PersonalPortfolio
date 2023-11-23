@@ -25,7 +25,9 @@ header {
 }
 .nav-items .nav-logo {
   padding: 0;
-  transform-style: preseve-3d;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transform: perspective(1000px);
   z-index: 1;
   position: relative;
 }

@@ -24,7 +24,10 @@ header {
 
     .nav-logo {
         padding: 0;
-        transform-style: preseve-3d;
+        // transform-style: preseve-3d;
+        transform-style: preserve-3d;
+        will-change: transform;
+        transform: perspective(1000px);
         z-index: 1;
         position: relative;
     }
@@ -71,8 +74,7 @@ header {
     }
 
     .nav-wrap {
-        padding-left: 40vh;
-        
+        padding-left: 40vh;   
     }
 }
 
