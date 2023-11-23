@@ -496,16 +496,19 @@ footer {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
+  min-width: 100%;
 }
 
 .footer-top {
   display: flex;
   align-items: center;
-  width: 100%;
+  min-width: 100%;
   max-width: 1200px;
 }
 .footer-top .socials {
   flex: 1;
+  justify-content: flex-end;
+  display: flex;
 }
 .footer-top .socials a {
   padding: 5px;
@@ -526,11 +529,6 @@ footer {
   padding: 0;
 }
 
-.socials {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .footer-bottom h6 {
   color: #f7f7f7;
   margin-top: 0;
@@ -542,6 +540,25 @@ footer {
   background-color: #f7f7f7;
 }
 
+@media (max-width: 577px) {
+  footer {
+    width: 100%;
+  }
+  .footer-top, .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .content, .socials {
+    display: flex;
+    justify-content: space-between;
+    background-color: #100303;
+    flex-direction: row;
+  }
+  .socials {
+    background-color: #100303;
+  }
+}
 body {
   background-color: #f7f7f7;
   min-height: 100%;
@@ -550,6 +567,7 @@ body {
   font-weight: 400;
   line-height: 28px;
   font-size: 20px;
+  min-width: 100%;
 }
 body p {
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -730,7 +748,7 @@ main {
 
 /* Styles for smartphones (max-width 576px) */
 @media (max-width: 576px) {
-  .main-top, .projects-section, .marquee-horizontal, .footer-top {
+  .main-top, .projects-section, .marquee-horizontal {
     flex-direction: column;
     align-items: flex-start;
     padding: 5px 30px 0;
@@ -738,14 +756,14 @@ main {
 }
 /* Styles for tablets (min-width 577px and max-width 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
-  .main-top, .projects-section, .marquee-horizontal, .footer-top {
+  .main-top, .projects-section, .marquee-horizontal {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 /* Styles for desktops (min-width 769px) */
 @media (min-width: 769px) {
-  .main-top, .projects-section, .marquee-horizontal, .footer-top {
+  .main-top, .projects-section, .marquee-horizontal {
     display: flex;
     justify-content: space-between;
   }
