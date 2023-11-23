@@ -486,7 +486,7 @@ header {
 
 footer {
   background-color: #100303;
-  position: relative;
+  position: fixed;
   z-index: 9999;
   padding-top: 3%;
   padding-left: 15%;
@@ -494,7 +494,7 @@ footer {
   padding-bottom: 5px;
   display: flex;
   flex-direction: column;
-  min-width: 80vh;
+  min-width: 85vh;
   flex: 0 0 auto;
 }
 
