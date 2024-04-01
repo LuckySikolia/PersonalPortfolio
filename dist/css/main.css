@@ -576,7 +576,7 @@ body {
   min-width: 100%;
 }
 body p {
-  font-family: "EB Garamond", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -643,7 +643,7 @@ main {
 .intro-text .intro-text-paragraph {
   margin-top: 10px;
   color: #100303;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
 }
 
