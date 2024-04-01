@@ -12,7 +12,6 @@ footer {
     // min-height: 100vh;
     min-width: 85vh;
     // flex:1;
-
     bottom: 0;
     
 }
@@ -63,7 +62,9 @@ footer {
     h6{
         color: map-get($text-color, secondary);
         margin-top: 0;
-        font-weight: map-get($font-weights, semi-bold) ;
+        font-weight: map-get($font-weights, regular);
+        // font-family: $secondary-font2;
+        font-style: normal;
     }
 
     .div-separator {

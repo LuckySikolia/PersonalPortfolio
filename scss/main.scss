@@ -150,14 +150,7 @@ main{
     }
 }
 
-//prevent heading from overlapping when screen collapse
-/* For screens wider than 768px */
-@media (max-width: 768px) {
-    body {
-        width: 150px;
-        height: 150px;
-    }
-}
+
 
 
 
@@ -221,7 +214,8 @@ main{
     display: block;
 
     .project-title {
-        font-weight: 900;
+        // font-weight: 900;
+        font-weight: map-get($font-weights, semi-bold );
         letter-spacing: 0.8px;
         text-transform: uppercase;
         border-bottom: 2px #100303;
@@ -293,5 +287,14 @@ main{
     .main-top, .projects-section, .marquee-horizontal{
       display: flex;
       justify-content: space-between;
+    }
+}
+
+//prevent heading from overlapping when screen collapse
+/* For screens wider than 768px */
+@media (max-width: 768px) {
+    body {
+        width: 150px;
+        height: 150px;
     }
 }

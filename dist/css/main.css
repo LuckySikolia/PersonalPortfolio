@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hind+Vadodara:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
+/* body text */
+/*header text */
 header {
   margin-top: 1%;
   display: block;
@@ -154,7 +157,7 @@ header {
 .project-summary .project-summary-outline p {
   font-size: 16px;
   line-height: 28px;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.3rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
@@ -307,7 +310,7 @@ header {
   margin-bottom: -0.7rem;
 }
 .research-stage .research-stage-body p {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
@@ -336,7 +339,7 @@ header {
   margin-bottom: -0.7rem;
 }
 .analysis-stage .analysis-stage-body p, .analysis-stage .analysis-stage-body ol, .analysis-stage .analysis-stage-body ul {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
@@ -372,7 +375,7 @@ header {
   margin-bottom: -0.7rem;
 }
 .ideate-stage .ideate-stage-body p {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
@@ -401,7 +404,7 @@ header {
   margin-bottom: -0.7rem;
 }
 .prototyping-stage .prototyping-stage-body p {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
@@ -430,7 +433,7 @@ header {
   margin-bottom: -0.7rem;
 }
 .testing-stage .testing-stage-body p, .testing-stage .testing-stage-body ol, .testing-stage .testing-stage-body ul {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
@@ -466,7 +469,7 @@ header {
   margin-bottom: -0.7rem;
 }
 .conclusion-stage .conclusion-stage-body p {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-size: 1.4rem;
   line-height: 2.25rem;
   margin-top: 1.25rem;
@@ -530,7 +533,8 @@ footer {
 .footer-bottom h6 {
   color: #f7f7f7;
   margin-top: 0;
-  font-weight: 500;
+  font-weight: 400;
+  font-style: normal;
 }
 .footer-bottom .div-separator {
   width: 100%;
@@ -572,7 +576,7 @@ body {
   min-width: 100%;
 }
 body p {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "EB Garamond", serif;
   font-weight: 400;
 }
 
@@ -630,7 +634,7 @@ main {
 }
 .intro-text .intro-text-header {
   font-weight: 700;
-  font-family: "Hind Vadodara", Helvetica, arial, sans-serif;
+  font-family: "Playfair", serif;
   font-size: 70px;
   margin-bottom: 5px;
   padding-bottom: 25px;
@@ -674,13 +678,6 @@ main {
   }
   100% {
     transform: translateX(0%);
-  }
-}
-/* For screens wider than 768px */
-@media (max-width: 768px) {
-  body {
-    width: 150px;
-    height: 150px;
   }
 }
 .projects-section {
@@ -734,7 +731,7 @@ main {
   display: block;
 }
 .project-name .project-title {
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   border-bottom: 2px #100303;
@@ -783,5 +780,12 @@ main {
   .main-top, .projects-section, .marquee-horizontal {
     display: flex;
     justify-content: space-between;
+  }
+}
+/* For screens wider than 768px */
+@media (max-width: 768px) {
+  body {
+    width: 150px;
+    height: 150px;
   }
 }/*# sourceMappingURL=main.css.map */
