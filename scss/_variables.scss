@@ -1,8 +1,16 @@
-$primary-font: 'Montserrat', sans-serif;
-// $primary-font: 'Helvectica', sans-serif;
-$secondary-font2: 'Hind Vadodara',  Helvetica, arial, sans-serif;
-$tertiary-font: 'Bebas Neue',  Helvetica Neue, arial, sans-serif;
-$secondary-font: 'Cormorant Garamond', Georgia, serif;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hind+Vadodara:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+$primary-font: "Montserrat", sans-serif; /* body text */
+$secondary-font: "EB Garamond", serif; /*header text */
+$secondary-font2: "Playfair", serif;
+$tertiary-font: "Hind Vadodara", sans-serif;
+
+
+// $primary-font: 'Montserrat', sans-serif;
+// // $primary-font: 'Helvectica', sans-serif;
+// $secondary-font2: 'Hind Vadodara',  Helvetica, arial, sans-serif;
+// $tertiary-font: 'Bebas Neue',  Helvetica Neue, arial, sans-serif;
+// $secondary-font: 'Cormorant Garamond', Georgia, serif;
 
 $background-color: (
     "primary": #f7f7f7,
@@ -18,6 +26,7 @@ $text-color: (
 
 $font-weights:(
     "regular": 400,
+    "semi-regular": 450,
     "semi-bold": 500,
     "bold": 600,
     "extra-bold": 700

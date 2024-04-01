@@ -22,7 +22,8 @@ body {
 
 
     p {
-        font-family: $secondary-font;
+        // font-family: $secondary-font;
+        font-family: $primary-font;
         font-weight: map-get($font-weights, regular);
     }
 }
@@ -100,7 +101,7 @@ main{
     #{&}-header{
         font-weight: map-get($font-weights, extra-bold);
         font-family: $secondary-font2;
-        font-size: 70px;
+        font-size: 74px;
         margin-bottom: 5px;
         padding-bottom: 25px;
         letter-spacing: 1px;
@@ -111,7 +112,7 @@ main{
     #{&}-paragraph{
         margin-top: 10px;
         color: map-get($text-color, primary);
-        font-size: 20px;
+        font-size: 16px;
         line-height: 30px;
     }
 }
@@ -150,14 +151,7 @@ main{
     }
 }
 
-//prevent heading from overlapping when screen collapse
-/* For screens wider than 768px */
-@media (max-width: 768px) {
-    body {
-        width: 150px;
-        height: 150px;
-    }
-}
+
 
 
 
@@ -221,7 +215,8 @@ main{
     display: block;
 
     .project-title {
-        font-weight: 900;
+        // font-weight: 900;
+        font-weight: map-get($font-weights, semi-bold );
         letter-spacing: 0.8px;
         text-transform: uppercase;
         border-bottom: 2px #100303;
@@ -293,5 +288,14 @@ main{
     .main-top, .projects-section, .marquee-horizontal{
       display: flex;
       justify-content: space-between;
+    }
+}
+
+//prevent heading from overlapping when screen collapse
+/* For screens wider than 768px */
+@media (max-width: 768px) {
+    body {
+        width: 150px;
+        height: 150px;
     }
 }
