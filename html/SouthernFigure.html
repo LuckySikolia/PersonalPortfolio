@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/dist/css/main.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind+Vadodara"> -->
+    <link rel="icon" href="../assets/favicon-32x32.png">
     <title>Southern Figure Webiste</title>
 </head>
 <body>
-    <header>
-        <div class="nav-items">
+    <header class="nav-header">
+        <nav id="navbar">
             <div class="nav-logo">
                 <a href="/index.html" aria-current="page" title="logo">
-                    <img src="../assets/white_background.svg" alt="" width="70vh" height="auto">
+                    <img src="../assets/light white background.svg" alt="" width="70vw" height="auto">
                 </a>
             </div>
-
-            <div class="nav-wrap">
-                <nav class="nav-links">
-                    <!-- <a href="/index.html">About</a> -->
-                    <a href="./index.html" aria-current="page">Projects</a>
-                    <a href="/html/contact.html">Contact</a>
-                    <a href="https://docs.google.com/document/d/1cLw1_OAfUtOYW_vzDvZDAQRDuU2NnMaL/edit?usp=sharing&ouid=111547165856693567470&rtpof=true&sd=true" target="_blank">Resume</a>
-                </nav>
+            <div class="nav-links">
+                <a href="/index.html" aria-current="page">Project</a>
+                <a href="./contact.html">Contact</a>
+                <a href="https://docs.google.com/document/d/1cLw1_OAfUtOYW_vzDvZDAQRDuU2NnMaL/edit?usp=sharing&ouid=111547165856693567470&rtpof=true&sd=true" target="_blank">Resume</a>
             </div>
-        </div>
+
+            <!-- hamburger menu for smaller screens -->
+            <div class="hamburger-menu">
+                <span id="openHam" class="material-symbols-outlined">Menu</span>
+                <span id="closeHam" class="material-symbols-outlined">Close</span>
+            </div>
+        </nav>
     </header>
 
     <main class="main-body">
@@ -35,6 +36,8 @@
             <img src="../assets/sf-header.png" alt="screens showing the web pages" class="project-header-image">
         </div>
 
+
+        
         <section id="southern-front">
             <div class="project-summary">
                 <div class="project-summary-heading">
@@ -123,7 +126,7 @@
                     </div>
 
                     <div class="image-group-right-image">
-                        <img src="../assets/sport-blits-3400.png" alt="">
+                        <img src="../assets/sport-blits-3400.png" alt="" height="50%">
                     </div>
                 </div>
 
@@ -390,6 +393,21 @@
         </div>
 
     </footer>
+
+    <script>
+        // Get references to the hamburger menu and the navigation links
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Add event listener to toggle the visibility of the navigation items
+        hamburgerMenu.addEventListener('click', () => {
+            // Toggle the 'is active' class on the hamburger menu icon
+            hamburgerMenu.classList.toggle('is-active');
+
+             // Toggle the 'is active' class on the navigation links to show/hide them
+            navLinks.classList.toggle('is-active');
+        });
+    </script>
     
 </body>
 </html>
