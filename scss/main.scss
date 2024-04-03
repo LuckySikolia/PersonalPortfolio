@@ -11,7 +11,8 @@
 }
 
 body {
-    background-color: map-get($background-color, primary);
+    // background-color: map-get($background-color, primary);
+    background-color: map-get($background-color, primary2);
     min-height: 100%;
     margin: 0;
     font-family: $primary-font;

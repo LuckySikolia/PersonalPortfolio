@@ -14,14 +14,17 @@ $tertiary-font: "Hind Vadodara", sans-serif;
 
 $background-color: (
     "primary": #f7f7f7,
-    "secondary": #100303
+    "primary2": #f9f6fe,
+    "secondary": #100303,
+    "secondary2":#FDE9FF
 );
 
 $text-color: (
     "primary": #100303,
     "accent": #696969,
     "secondary": #f7f7f7,
-    "theme-colour": #501895
+    "theme-colour": #501895,
+    "theme-colour2":#7A6191
 );
 
 $font-weights:(
@@ -31,3 +34,12 @@ $font-weights:(
     "bold": 600,
     "extra-bold": 700
 ); 
+
+// icons styling
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
