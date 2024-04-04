@@ -295,8 +295,9 @@ main{
 //prevent heading from overlapping when screen collapse
 /* For screens wider than 768px */
 @media (max-width: 768px) {
-    body {
-        width: 150px;
-        height: 150px;
+    body {  //unsure what this code does
+        // width: 150px;
+        // height: 150px;
+        width: 100vw;
     }
 }
