@@ -20,7 +20,7 @@ body {
   background-color: #f9f6fe;
   padding: 20px 0px;
   padding-bottom: 10px;
-  padding-left: 4%;
+  padding-left: 6%;
   position: relative;
   height: 10vh;
 }
@@ -48,6 +48,7 @@ nav {
   transform: perspective(1000px);
   z-index: 1;
   position: relative;
+  padding-right: 10%;
 }
 #navbar .nav-links {
   text-transform: uppercase;
