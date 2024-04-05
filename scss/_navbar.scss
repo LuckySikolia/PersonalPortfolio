@@ -10,9 +10,11 @@
     background-color: map-get($background-color, primary2);
     padding: 20px 0px;
     padding-bottom: 10px;
-    padding-left: 4%;
+    padding-left: 6%;
     position: relative;
     height: 10vh;
+    // width: 100vw;
+    // margin: 0 -10%;
 }
 
 nav {
@@ -29,6 +31,8 @@ nav {
     background-color: map-get($background-color, primary2);
     width: 100%;
     margin: 0 20px;
+    // margin-left: 20px;
+    // margin-right: -5%;
     justify-content: space-between;
 
     .nav-logo {
@@ -38,6 +42,7 @@ nav {
         transform: perspective(1000px);
         z-index: 1;
         position: relative;
+        padding-right: 10%;
     }
 
     .nav-links {
