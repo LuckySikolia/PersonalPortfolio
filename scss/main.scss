@@ -20,6 +20,7 @@ body {
     line-height: 28px;
     font-size: 20px;
     min-width: 100%;
+    overflow-x: hidden;
 
 
     p {
@@ -36,7 +37,36 @@ a {
     transition-delay: 0s;
     font-size: 16px;
     padding-left: 1em;  
+}
 
+
+//this is styling for the strong tag in html
+strong {
+    font-weight: map-get($font-weights, semi-bold);
+}
+
+
+blockquote {
+    color: #9a2c38;
+    background-color: transparent;
+    border-left: 3px solid #9a2c38; //add colour
+    margin: 20px 0;
+    margin-left: 40px;
+    padding-left: 0;
+    font-family: $secondary-font;
+    display: block;
+    max-width: 600px;
+    float: none;
+    clear: none;
+    letter-spacing: .2px;
+    padding: 40px;
+    font-size: 22px;
+    line-height: 38px;
+    margin-right: auto;
+    
+    ul, ol {
+        color: #9a2c38
+    }
 }
 
 
@@ -299,5 +329,7 @@ main{
         // width: 150px;
         // height: 150px;
         width: 100vw;
+    margin: 0;
+    padding: 0;
     }
 }

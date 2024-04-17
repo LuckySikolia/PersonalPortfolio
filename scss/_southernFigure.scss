@@ -1,7 +1,26 @@
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        color: map-get($text-color, primary);
+    }
+}
+
+//this is styling for the strong tag in html
+strong {
+    font-weight: map-get($font-weights, semi-bold);
+}
+
+
 #southern-front {
     padding-top: 0px;
     padding-left: 26%; //changed from 16%
-    padding-right: 26%; //changed from 16%
+    padding-right: 22%; //changed from 16%
     padding-bottom: 100px;
 }
 
@@ -13,167 +32,100 @@
     position: relative;
     margin-bottom: 60px;
     // width: 100vh;
+    background-color: #d2bfc1;
+    
 
     img {
-        width: 100%;
-        height: auto;
+        // width: 100%;
+        width: 80%;
+        // height: auto;
+        height: 660px;
         image-rendering: auto;
+        margin: 0 9.5%;
     }
 }
 
 
-.project-summary {
-    padding-bottom: 50px;
-    margin-bottom: 14%;
-    #{&}-heading {
-        display: block;
-        font-weight: map-get($font-weights, extra-bold);
-
-        h1{
-            padding-bottom: 70px;
-            // letter-spacing: 2px;
-            letter-spacing: -.02em;
-            font-size: 4rem;
-            font-family: Helvetica, sans-serif;
-            line-height: 100%;
-            font-weight: map-get($font-weights, bold);
-            text-align: center;
-        }
-    }
-
-    #{&}-outline{
-        h3{
-            // padding-bottom: 5px;
-            letter-spacing: 1px;
-            font-size: 30px;
-            line-height: 28px;
-        }
-
-        p {
-            line-height: 28px;
-            // font-family: $secondary-font;
-            font-family: $primary-font;
-            font-size: 18px;
-            font-style: normal;
-            line-height: 1.8rem;
-            margin-top: 1.25rem;
-            margin-bottom: 2.25rem;
-            font-weight: 350;  //*changed from 300*
-
-        }
-    }
-
-    #{&}-role {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-
-        .wrapper{
-            max-width: 1200px;
-            grid-column-gap: 10px;
-            // grid-row-gap: 16px;
-            border-top: 2px solid #000;
-            border-bottom: 2px solid #000;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-auto-columns: 1fr;
-            // margin-left: auto;
-            // margin-right: auto;
-            // padding-bottom: 0;
-            display: grid;
-        }
-    }
-
+// new code for the project sections
+#prj-summary, #prj-research, #prj-ideate, #prj-conclusion {
+    height: auto;
+    // width: 100vw;
+    margin: 5% 20%;
+    // margin-right: 25%;
+    // margin: 100px 200px;
+    padding: 0 50px;
+    // background-color: #bfa5ac0e;  
 }
 
-//change text font inside grid
-.project-summary-role {
-    p {
-        font-family: $primary-font;
-        font-size: 24px;
+.prj-summary-heading{
+    h2 {
+        font-size: 30px;
+        // font-weight: 800;
+        // font-style: bold;
+        color: map-get($text-color, primary);
     }
 }
 
+.prj-summary-role {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 2px solid #100303;
+    border-bottom: 2px solid #100303;
+    margin-top: 50px;
 
-.item1, .item2, .item3, .item4 {
-    border-left: 1px solid grey;
-    padding: 5px;
-}
-.item4 {
-    border-right: 1px solid grey;
-}
-
-.item1-role, .item2-project, .item3-timeline, .item4-tools {
-    padding: 15px;
-
-    p{
-        padding-top: 10px;
-        font-size: 14px;
-        padding-right: 10px;
-        line-height: 20px;
-        text-transform: uppercase;
-        color: gray;
+    .role, .project, .timeline, .tools {
+        border-right: 1px solid #100303;
+        padding: 10px 10px;
+    }
+    .role {
+        border-left: 1px solid #100303;
     }
 }
 
+.prj-design-process {
+    margin-top: 50px;
 
-// code for image overview section
-.project-image-summary {
-    // margin: 0 10%;
-    display: flex;
-    flex-direction: column;
-     width: 68vw; //*this affects the width of the container on the right side*
-    // align-items: center;
-    // margin-right: 10%;
-    // padding-right: 8%;
-    margin-left: -10%;
-    justify-content: center;
+    img{
+        width: 50vw;
+        padding: 40px 0;
+        padding-left: -5%;
+    }
 }
 
-//responsible for the section background colour (TODO:Find a solution it didnt work well)
-// .project-image-summary ::before {
-//     content: "";
-//     display: flex;
-//     z-index: -1;
-//     position: absolute;
-//     top: 20%;
-//     left: -20%;
-//     right: -20%;
-//     bottom: 2px;
-//     width: 150vw;
-//     overflow: hidden;
-//     padding: -10%;
-//     margin: -19.5% -20%;
-//     // margin-top: -20%;
-//     // margin-bottom: -8%;
-//     // margin: -20%; /* Negative margins to fill the element's margin space */
-//     background-color:#e6e8ec; /* Background color for the pseudo-element */
-//     // opacity: 0.6%;
-//     opacity: 20%;
-// }
+//new code for the project imagery section
+#prj-imagery{
+    height: auto;
+    padding: 50px 100px;
+    padding-bottom: 0;
+    background-color: #bfa5ac0e;  
+}
 
-//*this is new code*
 .image-group-r {
-    // background-color: aliceblue;
     display: grid;
     position: relative;
     column-gap: 60px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    width: 75vw;
+    width: 60vw;
+    padding-left: 20%;
+    padding-top: 40px;
     padding-bottom: 60px;
     margin-bottom: 100px; //100px
+    justify-items: end;
 }
+
 .image-group-l{
     display: grid;
     position: relative;
-    // column-gap:;
-    grid-template-columns: 2fr 1fr;
+    column-gap: 60px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    width: 55vw;
+    width: 60vw;
+    padding-left: 20%;
     padding-bottom: 60px;
     margin-bottom: 100px;
+    justify-items: start;
+    
 }
 
 .image-group-r-text, .image-group-l-text{
@@ -182,14 +134,13 @@
         margin-top: 10px;
         font-family: $primary-font;
         font-style: normal;
-        font-weight: map-get($font-weights, regular);
-        font-size: 18px;
+        // font-weight: map-get($font-weights, regular);
+        // font-size: 18px;
         font-weight: 350;  //*added this font weight *
     }
 }
 .image-group-r-img{
     img {
-        // width: 600px;
         width: 30vw;
     }
 }
@@ -200,288 +151,82 @@
     }
 }
 
+//code for the resesrch documentation
+#prj-research {
+    height: auto;
+    margin: 5% 20%;
+    padding: 0 50px;
+}
 
-
-.design-process{
-    h3{
-        letter-spacing: 1px;
-        font-size: 42px;
-        line-height: 28px;
-        padding-bottom: 20px;
+.prj-section-heading-main {
+    margin-bottom: 40px;
+    h3 {
+        font-size: 28px;
+        color: map-get($text-color, primary);
+        font-family: $secondary-font;
+        letter-spacing: 0.2px;
+        line-height: 40px;
+        font-weight: map-get($font-weights, semi-bold);
+        // text-align: center; 
+        
     }
-
-    figcaption {
-        font-size: 18px;
+    hr {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        // this code centers the hr element
+        // width: 90px;
+        // margin: 0 44.5%;
+        // height: 1.2px;
+        color: map-get($background-color, secondary);
+        background-color: map-get($background-color, secondary);
     }
+}
 
-    figure {
-        padding-top: 3%;
-        padding-bottom: 1%;
-        text-align: center;
+.prj-research-body, .prj-ideate-body {
+    p {
+        padding-bottom: 16px;
+    };
+    ul {
+        font-size: 16px;
+        font-style: normal;
+        color: map-get($text-color, primary);
+        padding-left: 8%;
+        // padding-top: 2%;
+        list-style-type: square;
     }
+    li {
+        margin-left: 2%;
+    }
+}
+
+p.last-paragraph {
+    padding-bottom: 0;
+}
+
+//for all the illustrative images
+.prj-illustration {
+    // padding-top: 3%;
+    padding-bottom: 1%;
+    text-align: center;
 
     img {
         max-width: 55vw;
     }
+    // figcaption {
+    //     font-size: 12px;
+    // }
 }
 
-//section (research)
-.research-stage {
-    padding-bottom: 20px;
-
-    #{&}-intro {
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-family: $primary-font;
-        font-weight: map-get($font-weights, semi-bold);
-
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1rem;
-        text-decoration: underline;
-    }
-
-    #{&}-body {
-        h5 {
-            letter-spacing: 0.2px;
-            font-size: 26px;
-            line-height: 28px;
-            margin-top: 2rem;
-            color: #582a2d;
-            margin-bottom: -0.7rem;
-            
-        }
-
-        p {
-            font-family: $secondary-font;
-            font-size: 1.4rem;
-            line-height: 2.25rem;
-            margin-top: 1.25rem;
-            font-weight: 300;
-        }
-    }
-}
-
-
-// section (analysis)
-.analysis-stage {
-    padding-bottom: 20px;
-
-    #{&}-intro {
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-family: $primary-font;
-        font-weight: map-get($font-weights, semi-bold);
-
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1rem;
-        text-decoration: underline;
-    }
-
-    #{&}-body {
-        h5 {
-            letter-spacing: 0.2px;
-            font-size: 26px;
-            line-height: 28px;
-            margin-top: 2rem;
-            color: #582a2d;
-            margin-bottom: -0.7rem;
-            
-        }
-
-        p, ol, ul {
-            font-family: $secondary-font;
-            font-size: 1.4rem;
-            line-height: 2.25rem;
-            margin-top: 1.25rem;
-            font-weight: 300;
-        }
-
-        ol, ul {
-            padding: 0 50px;
-            padding-right: 60px;
-        }
-
-        li {
-            padding-bottom: 10px;
-        }
-    }
-}
-
-
-
-//section (ideate)
-.ideate-stage {
-    padding-bottom: 20px;
-
-    #{&}-intro {
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-family: $primary-font;
-        font-weight: map-get($font-weights, semi-bold);
-
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1rem;
-        text-decoration: underline;
-    }
-
-    #{&}-body {
-        h5 {
-            letter-spacing: 0.2px;
-            font-size: 26px;
-            line-height: 28px;
-            margin-top: 2rem;
-            color: #582a2d;
-            margin-bottom: -0.7rem;
-        }
-
-        p {
-            font-family: $secondary-font;
-            font-size: 1.4rem;
-            line-height: 2.25rem;
-            margin-top: 1.25rem;
-            font-weight: 300;
-        }
-    }
-}
-
-
-//section (prototype)
-.prototyping-stage {
-    padding-bottom: 20px;
-
-    #{&}-intro {
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-family: $primary-font;
-        font-weight: map-get($font-weights, semi-bold);
-
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1rem;
-        text-decoration: underline;
-    }
-
-    #{&}-body {
-        h5 {
-            letter-spacing: 0.2px;
-            font-size: 26px;
-            line-height: 28px;
-            margin-top: 2rem;
-            color: #582a2d;
-            margin-bottom: -0.7rem;
-        }
-
-        p {
-            font-family: $secondary-font;
-            font-size: 1.4rem;
-            line-height: 2.25rem;
-            margin-top: 1.25rem;
-            font-weight: 300;
-        }
-    }
-}
-
-//section (testing)
-.testing-stage {
-    padding-bottom: 20px;
-
-    #{&}-intro {
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-family: $primary-font;
-        font-weight: map-get($font-weights, semi-bold);
-
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1rem;
-        text-decoration: underline;
-    }
-
-    #{&}-body {
-        h5 {
-            letter-spacing: 0.2px;
-            font-size: 26px;
-            line-height: 28px;
-            margin-top: 2rem;
-            color: #582a2d;
-            margin-bottom: -0.7rem;  
-        }
-
-        // p {
-        //     font-family: $secondary-font;
-        //     font-size: 1.4rem;
-        //     line-height: 2.25rem;
-        //     margin-top: 1.25rem;
-        //     font-weight: 300;
-        // }
-
-        p, ol, ul {
-            font-family: $secondary-font;
-            font-size: 1.4rem;
-            line-height: 2.25rem;
-            margin-top: 1.25rem;
-            font-weight: 300;
-        }
-
-        ol, ul {
-            padding: 0 50px;
-            padding-right: 60px;
-        }
-
-        li {
-            padding-bottom: 10px;
-        }
-    }
-}
-
-//section (conclusion)
-.conclusion-stage {
-    padding-bottom: 20px;
-
-    #{&}-intro {
-        letter-spacing: 1px;
-        line-height: 30px;
-        font-family: $primary-font;
-        font-weight: map-get($font-weights, semi-bold);
-
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1rem;
-        text-decoration: underline;
-    }
-
-    #{&}-body {
-        h5 {
-            letter-spacing: 0.2px;
-            font-size: 26px;
-            line-height: 28px;
-            margin-top: 2rem;
-            color: #582a2d;
-            margin-bottom: -0.7rem;   
-        }
-
-        p {
-            font-family: $secondary-font;
-            font-size: 1.4rem;
-            line-height: 2.25rem;
-            margin-top: 1.25rem;
-            font-weight: 300;
-        }
-    }
-}
 
 .video-interactive-prototype{
+    padding-top: 2%;
     padding-bottom: 50px;
     padding-left: 10.5%;
     video {
         border-top: 3px solid#000; 
         border-bottom: 3px solid#000; 
         max-height: 500px; 
-        max-width: 800px;
-        
+        max-width: 800px;  
     }
 }
 
@@ -540,8 +285,14 @@
 //     }
 // }
   
-/* Styles for small screens (phones) */
-@media only screen and (max-width: 600px) {
+/* Styles for small screens (phones) changes from max 600px*/
+@media only screen and (max-width: 768px) {
+    body{
+        p {
+            font-size: 14px;
+        }
+    }
+
     #sf-product {
         margin-bottom: -30%;
     }
@@ -574,6 +325,114 @@
                     // font-size: 20px;
                 }
             }
-    }   
+    }
+
+    .main-top-header{
+        // justify-content: center;
+        // align-items: flex-end;
+        display: flex;
+        position: relative;
+        margin-bottom: 60px;
+        // width: 100vh;
+        background-color: #d2bfc1;
+        
+    
+        img {
+            width: 100vw;
+            height: auto;
+            image-rendering: auto;
+            
+        }
+    }
+
+    #prj-summary, #prj-research, #prj-ideate, #prj-conclusion {
+        margin: 5% 2%;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+    #prj-summary-heading {
+        font-size: 28px;
+    }
+
+    .prj-summary-role {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 2fr;
+        border-bottom: 2px solid #100303;
+        border-top: 2px solid #100303;
+        margin-top: 50px;
+    
+        .role, .project, .timeline, .tools {
+            border-right: 2px solid #100303;
+            padding-left: 20px;
+        }
+        .role, .timeline {
+            border-left:2px solid #100303;
+        }
+        .role, .project {
+            border-bottom: 2px solid #100303;
+        }
+    }
+
+    .prj-design-process {
+        margin-top: 50px;
+    
+        img{
+            width: 85vw;
+            padding: 40px 0;    
+        }
+    }
+    
+    #prj-imagery{
+        padding: 50px;
+        padding-bottom: 0;
+    }
+    
+    .image-group-r, .image-group-l {
+        width: 75vw;
+        padding-left: 5%;
+        padding-top: 30px;
+        margin-bottom: 40px; 
+    }
+
+    .image-group-r-text, .image-group-l-text{
+        p {
+            width: 100%;
+            // margin-top: 10px;
+            font-family: $primary-font;
+            font-style: normal;
+            // font-weight: map-get($font-weights, regular);
+            // font-size: 18px;
+            font-weight: 350;  //*added this font weight *
+        }
+    }
+
+    .prj-section-heading-main {
+        h3 {
+            font-size: 26px;
+            text-align: center;
+        }
+        hr {
+            width: 80px;
+            margin: 0 42%;
+        }
+    }
+
+    .prj-research-body, .prj-ideate-body {
+        ul {
+            font-size: 14px;
+        }
+    }
+    .prj-illustration {   
+        img {
+            max-width: 85vw;
+        }
+    }
+
+    //stylings for the footer bottom
+    .footer-bottom {
+        display: hidden;
+    }
+
 }
 

@@ -12,7 +12,9 @@
     padding-bottom: 10px;
     padding-left: 6%;
     position: relative;
-    height: 10vh;
+    // height: 10vh;
+    overflow-x: hidden;
+    padding-right: 5%;
     // width: 100vw;
     // margin: 0 -10%;
 }
@@ -73,6 +75,10 @@ nav {
 .nav-links {
     font-weight: map-get($font-weights, bold);
     font-family: $primary-font;
+
+    a {
+    padding-left: 2em;
+    }
 
     a:active {
         transition-duration: 0.2s;
@@ -142,13 +148,15 @@ nav {
     }
 
     .nav-header {
-        padding-right: 2%;
-        padding-left: 2%;
+        // padding-right: 2%;
+        // padding-left: 2%;
+        overflow-x: visible;
         width: auto;
     }
 
     .hamburger-menu {
         display: flex;
+        // display: block;
         cursor: pointer;
     }
 
@@ -162,17 +170,25 @@ nav {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        flex: 1;
-        right: 0;
+        // flex: 1;
+        // right: 0;
+        left: 0;
         top: 80px;
         background-color: map-get($background-color, primary2);
-        width: 100%;
-        height: 80vh;
-        gap: 3vh;
+        width: 100vw;
+        height: 140px;
+        gap: 2vh;
+        border: 5px solid #f9f6fe;
+        overflow-x: hidden;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
     }
 
     .nav-links > a {
-        font-size: 20px;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: map-get($font-weights, regular);
+        padding: 0;
+        margin: 0;
     }
 
     .nav-links > a:hover {
@@ -182,6 +198,44 @@ nav {
 
     .nav-links.is-active {
         display: flex; /* Show navigation links when active */
+        flex-flow: column;
+        padding-left: 14%;
+        margin-left: -14%;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        // width: 100vw;
+    }
+
+    //nav links states
+    .nav-links {
+        // font-weight: map-get($font-weights, normal);
+        font-family: $primary-font;
+        font-style: normal;
+
+        a:active {
+            transition-duration: 0.2s;
+            transition-delay: 0s;
+            text-decoration: underline;
+            font-weight: map-get($font-weights, bold);
+        }
+
+        a:hover {
+            color: map-get($text-color, theme-colour2);
+            text-decoration: underline;
+            // outline: invert;
+            font-size: 18px;
+            font-weight: map-get($font-weights, semi-bold);
+
+        }
+
+        a:focus {
+            color: map-get($text-color, theme-colour2);
+            outline: invert;
+            font-size: 18px;
+            text-decoration: underline;
+        }
     }
     
 
