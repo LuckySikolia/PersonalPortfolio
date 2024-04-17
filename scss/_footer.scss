@@ -2,16 +2,13 @@ footer {
     background-color: map-get($background-color, secondary);
     position: relative;
     z-index: 9999;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-left: 15%;
     padding-right: 15%;
-    padding-bottom: 5px;
-    // display: block;
+    padding-bottom: 1%;
     display: flex;
     flex-direction: column;
-    // min-height: 100vh;
     min-width: 85vh;
-    // flex:1;
     bottom: 0;
     
 }
@@ -52,11 +49,10 @@ footer {
         padding: 0;
     }
 }
+.footer-small {
+    display: none;
+}
 
-// .socials{
-//     display: flex;
-//     justify-content: flex-end;
-// }
 
 .footer-bottom {
     h6{
@@ -74,64 +70,138 @@ footer {
     }   
 }
 
+.fa--medium {
+    display: inline-block;
+    width: 1.17em;
+    height: 0.9em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1792 1536'%3E%3Cpath fill='%23000' d='M597 293v1173q0 25-12.5 42.5T548 1526q-17 0-33-8L50 1285q-21-10-35.5-33.5T0 1205V65q0-20 10-34t29-14q14 0 44 15l511 256q3 3 3 5m64 101l534 866l-534-266zm1131 18v1054q0 25-14 40.5t-38 15.5t-47-13l-441-220zm-3-120q0 3-256.5 419.5T1232 1199L842 565l324-527q17-28 52-28q14 0 26 6l541 270q4 2 4 6'/%3E%3C/svg%3E");
+    background-color: map-get($background-color ,primary2);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    padding: 0 8px;
+}
+.fa--linkedin {
+    display: inline-block;
+    width: 1.03em;
+    height: 0.9em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1536 1504'%3E%3Cpath fill='%23000' d='M349 497v991H19V497zm21-306q1 73-50.5 122T184 362h-2q-82 0-132-49T0 191q0-74 51.5-122.5T186 20t133 48.5T370 191m1166 729v568h-329V958q0-105-40.5-164.5T1040 734q-63 0-105.5 34.5T871 854q-11 30-11 81v553H531q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52t87-43.5T1157 474q171 0 275 113.5T1536 920'/%3E%3C/svg%3E");
+    background-color: map-get($background-color ,primary2);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    padding: 0 8px;
+}
+.ic--sharp-email {
+    display: inline-block;
+    width: 1.5em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M22 4H2v16h20zm-2 4l-8 5l-8-5V6l8 5l8-5z'/%3E%3C/svg%3E");
+    background-color: map-get($background-color ,primary2);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    padding: 0 8px;
+}
+.mdi--github {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2'/%3E%3C/svg%3E");
+    background-color: map-get($background-color ,primary2);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    padding: 0 8px;
+}
+.simple-icons--hashnode {
+    display: inline-block;
+    width: 0.8em;
+    height: 0.9em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962M12 15.953a3.953 3.953 0 1 1 0-7.906a3.953 3.953 0 0 1 0 7.906'/%3E%3C/svg%3E");
+    background-color: map-get($background-color ,primary2);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    padding: 0 8px;
+}
 
-
-// for small screens
-@media (max-width: 577px) {
-
-    footer {
-        position: static;
-        width: 100%;
-        margin: 0;
-        display: fixed;
-        bottom: 0;
-    }
-
-    .footer-top, .footer-bottom {
-      flex-direction: row;
-    //   align-items: center;
-    //   padding: 5px 30px 0; 
-      justify-content: space-between;
-      padding: 5px;     
-    }
-
-    .content, .socials {
-        display: flex;
-        // padding-right: 10px;
-        justify-content: space-between;
-        background-color: #100303;
-        flex-direction: row;
-        // padding-left: 50%;
-    }
-
-    .socials{
-        background-color: #100303;
-        // padding-left: 40%;
-    }
+.fa--medium:hover, .fa--linkedin:hover, .ic--sharp-email:hover, .mdi--github:hover, .simple-icons--hashnode:hover {
+    background-color: map-get($background-color, secondary3);
 }
 
 
-// /* Styles for tablets (min-width 577px and max-width 768px) */
-// @media (min-width: 577px) and (max-width: 768px) {
-//     .footer-top, .footer-bottom {
-//       flex-direction: row;
-//       justify-content: space-between;
-//     }
 
-//     .nav-links {
-//         display: flex;
-//         justify-content: space-between;
-//     }
 
-//     .nav-wrap {
-//         padding-left: 70%;
-//     }
-// }
 
-// /* Styles for desktops (min-width 769px) */
-// @media (min-width: 769px) {
-//     .footer-top, .footer-bottom{
-//       display: flex;
-//       justify-content: space-between;
-//     }
-// }
+
+
+/* Styles for small screens (phones) */
+@media only screen and (max-width: 768px) {
+    footer {
+        // display: flex;
+        width: 100%;
+        // position: relative;
+        padding: 2% 0;
+        margin: 0;
+        overflow: hidden;
+        align-items: center;
+        flex-direction: row;
+        min-width: 0;
+    }
+    .footer-bottom, .footer-top {
+        display: none;
+    }
+    .footer-small {
+        display: inline-block;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        p {
+            color: map-get($text-color, secondary);
+        }
+    }
+    .footer-logo-sm{
+        padding-right: 1%;    
+        a {
+            padding: 0;
+        }
+    }
+
+    .fa--medium {
+        width: 1.17em;
+        height: 1em;
+    }
+    .fa--linkedin {
+        width: 1.03em;
+        height: 1em;
+    }
+    .ic--sharp-email {
+        width: 1.5em;
+        height: 1.2em;
+    }
+    .mdi--github {
+        width: 1em;
+        height: 1.1em;
+    }
+    .simple-icons--hashnode {
+        width: 1em;
+        height: 1em;
+    }
+
+}
