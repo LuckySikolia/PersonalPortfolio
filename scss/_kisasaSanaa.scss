@@ -1,0 +1,260 @@
+// this is the man background colour specific to the Kisasa sanaa project
+#kisasa-body {
+    background-color: map-get($background-color, kisasa-bg);
+}
+#kisasa-body #navbar {
+    background-color: map-get($background-color, kisasa-bg);
+}
+
+//styling for scroll up floating button
+.ri--arrow-up-circle-fill {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12S6.48 2 12 2m1 10h3l-4-4l-4 4h3v4h2z'/%3E%3C/svg%3E");
+    background-color: rgba(25, 102, 84, 0.5);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    cursor: pointer;
+
+    // box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.14);
+}
+
+.ri--arrow-up-circle-fill:hover {
+    background-color:#196654;
+}
+
+.main-top-header-kisasa {
+    // width: auto;
+    // height:auto;
+    // background-color: map-get($background-color, kisasa-bg-dark );
+    background-color: rgba(25, 102, 84, 0.3);
+    // background-color: map-get($background-color, kisasa-green-main );
+    // img {
+    //    width: auto;
+    // }
+}
+
+.project-header-image {
+    width: 100vw;
+    height: auto;
+    image-rendering: auto;
+    margin: 0;
+}
+
+
+
+#kisasa-body {
+    .nav-header {
+        background-color: map-get($background-color, kisasa-bg);
+    }
+
+    .nav-links {
+        a:hover {
+            color: #196654;
+        }
+    }
+
+    blockquote {
+        color: #375454;
+        border-left: 3px solid #375454;
+    }
+
+    .fa--medium:hover, .fa--linkedin:hover, .ic--sharp-email:hover, .mdi--github:hover, .simple-icons--hashnode:hover {
+        background-color:#196654;
+        
+    }
+
+   
+
+    @media only screen and (max-width: 768px) {
+        .nav-links {
+            background-color: map-get($background-color, kisasa-bg);
+            border: 5px solid map-get($background-color, kisasa-bg );
+
+        }
+    }
+   
+}
+
+
+
+//code for the #prj-imagery section images
+#kisasa-body {
+    .image-group-r-img{
+        img {
+            width: 25vw;
+        }
+    }
+    .image-group-l-img {
+        // width: 100%;
+        img {
+            width: 25vw;
+        }
+    }
+    
+
+    .image-group-r {
+        display: grid;
+        position: relative;
+        column-gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 60vw;
+        padding-left: 15%;
+        padding-top: 20px;
+        padding-bottom: 45px;
+        margin-bottom: 0; //100px
+        justify-items: normal;
+    }
+
+    .image-group-l{
+        display: grid;
+        position: relative;
+        column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 60vw;
+        padding-left: 20%;
+        padding-bottom: 45px;
+        margin-bottom: 0;
+        justify-items: normal;
+        
+    }
+
+    .image-group-r-text, .image-group-l-text{
+        p {
+            width: 100%;
+            margin-top: 10px;
+            font-family: $primary-font;
+            font-style: normal;
+            // font-weight: map-get($font-weights, regular);
+            // font-size: 18px;
+            font-weight: 350;  //*added this font weight *
+        }
+    }
+
+}
+
+
+
+
+//new code for the project imagery section
+#kisasa-body #prj-imagery{
+    height: auto;
+    padding: 50px 20px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    background-color: map-get($background-color, kisasa-bg-dark);  
+}
+
+#Kisasa-pg-images img{
+    max-width: 70vw; 
+    margin-left: -15%;
+    // margin-left: 5%;
+}
+
+//code for floating button
+.floating{
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    bottom: 10%;
+    margin-right: 6%;
+    z-index: 99;
+}
+
+
+
+//code for the header
+#kisasa-body {
+    .main-top-header{
+        // justify-content: center;
+        // align-items: flex-end;
+        display: flex;
+        position: relative;
+        margin-bottom: 60px;
+        // width: 100vh;
+        background-color: #d2bfc1;
+        
+    
+        img {
+            // width: 100%;
+            width: 80%;
+            // height: auto;
+            height: 660px;
+            image-rendering: auto;
+            margin: 0 9.5%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// code for responsive web
+@media only screen and (max-width: 768px) {
+    #Kisasa-pg-images img {
+        max-width: 95vw;
+        margin-left: -10%;
+    }
+
+    .floating {
+        margin-right: 10%;
+        bottom: 6%;
+    }
+
+    .ri--arrow-up-circle-fill {
+        width: 2em;
+        height: 2em;
+        background-color: rgba(25, 102, 84, 0.6);
+    }
+}   
+
+@media only screen and (max-width: 768px) {
+    #kisasa-body .image-group-r, #kisasa-body .image-group-l {
+        width: 75vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    #kisasa-body .image-group-right, #kisasa-body .image-group-left {
+        display: grid;
+        column-gap: 40px;
+        // row-gap: 50px;
+        // grid-template-rows: auto;
+        grid-template-columns: 2fr 2fr;
+        // grid-template-columns: 1fr 2fr;
+        // grid-auto-columns: 1fr;
+        position: relative;
+    
+        #{&}-text {
+            margin-top: 30px;
+            // font-size: 40px;
+            letter-spacing: 2px;
+            // margin-bottom: 30px;
+            white-space: normal;
+            // object-fit: fill;
+            // display: inline-block;   //changed from block
+            align-items: center;
+            // vertical-align: middle;
+    
+            h3 {
+                margin-top: 0;
+                font-weight: map-get($font-weights, extra-bold);
+                line-height: 1em;
+                // font-size: 20px;
+            }
+        }
+    } 
+}
+

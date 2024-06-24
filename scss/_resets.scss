@@ -1,6 +1,7 @@
 *{
     // box-sizing: border-box; //check on this TODO
     margin: 0;
+    // margin: auto;  this breaks the layout of the entire thing. Requires another refactor of the layout of individual components. IE too much work
     padding: 0;
 }
 
@@ -9,3 +10,4 @@ body {
     overflow-x: hidden;
     // width: 100%;
 }
+
