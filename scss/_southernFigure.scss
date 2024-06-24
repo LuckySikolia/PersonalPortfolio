@@ -207,15 +207,17 @@ p.last-paragraph {
 //for all the illustrative images
 .prj-illustration {
     // padding-top: 3%;
-    padding-bottom: 1%;
+    padding-bottom: 6%;
     text-align: center;
 
     img {
         max-width: 55vw;
     }
-    // figcaption {
-    //     font-size: 12px;
-    // }
+    figcaption {
+        font-size: 12px;
+        font-style: italic;
+        color: #100303;
+    }
 }
 
 
