@@ -258,6 +258,26 @@ strong {
   margin: 0 9.5%;
 }
 
+mark.scroll-highlight-sf {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: linear-gradient(#e1c4d6, #e1c4d6);
+  animation: mark-it linear;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-iteration-count: 1;
+  animation-range: contain 0% contain 55%;
+}
+
+@keyframes mark-it {
+  0% {
+    background-size: 0 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
 #prj-summary, #prj-research, #prj-ideate, #prj-conclusion {
   height: auto;
   margin: 5% 20%;
