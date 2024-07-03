@@ -81,6 +81,28 @@
    
 }
 
+//code for the highlight on scroll effect
+mark.scroll-highlight{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: linear-gradient(#eecbb8, #eecbb8);
+
+    animation: mark-it linear;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+    animation-iteration-count: 1;
+    animation-range: contain 0% contain 55%;
+}
+
+@keyframes mark-it {
+    0% {
+        background-size: 0 100%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
 
 
 //code for the #prj-imagery section images
