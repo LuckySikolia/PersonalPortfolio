@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./dist/css/main.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon-32x32.png">
+
+    <!-- preloaded cover images for the projects -->
+    <link rel="preload" as="image" href="/assets/cover_images/kisasa_cover_transparent_2.png"> 
+    <link rel="preload" as="image" href="/assets/cover_images/sf-transparent.png">
  
     <title>Sikolia's Portfolio</title>
 </head>
@@ -19,7 +23,7 @@
             </div>
             <div class="nav-links">
                 <a href="/index.html" aria-current="page">Project</a>
-                <a href="./contact.html">Contact</a>
+                <a href="./html/contact.html">Contact</a>
                 <a href="https://docs.google.com/document/d/1cLw1_OAfUtOYW_vzDvZDAQRDuU2NnMaL/edit?usp=sharing&ouid=111547165856693567470&rtpof=true&sd=true" target="_blank">Resume</a>
             </div>
 
@@ -32,17 +36,44 @@
     </header>
 
     <main class="main-body"> 
-        <!-- //consider removing -->
-       <div class="main-top">
-            <div class="project-holder">
-                <div class="intro-image">
-                    <img src="../assets/photo-1611264327630-8090373c8cef-removebg-preview.png" alt="" width="400px">
+        <div class="main-top-landing">
+            <div class="project-holder-landing" id="project-holder-landing">
+                <div class="intro-image-landing">
+                    <img src="../assets/photo-1611264327630-8090373c8cef-removebg-preview.png" alt="">
                 </div>
-                <div class="intro-text">
-                   <h2 class="intro-text-header">Lucky Sikolia</h2>
-                   <p class="intro-text-paragraph">Hey there, I am self-taught UX designer with a foundation in business
+                <div class="intro-text-landing">
+                   <h2 class="intro-text-landing-header">Lucky Sikolia</h2>
+                   
+                   <!-- version 3 -->
+                    <p>I'm a self-taught UX/UI designer with a background in graphic design. My passion for visual storytelling, 
+                        inspired by photography and cinematography, drives me to create user experiences that are both stunning 
+                        and functional. Dive into my case studies below to see my work in action </p>
+
+                   <!-- version 2 -->
+                   <!-- <p class="intro-text-landing-paragraph">I'm a self-taught UX/UI designer with a background in graphic design. 
+                    My passion for visual storytelling, fueled by photography and cinematography, translates into crafting user 
+                    experiences that are both beautiful and functional. Explore my case studies below to see my work in action.</p> -->
+
+                    <!-- version 1 -->
+                   <!-- <p class="intro-text-landing-paragraph">Hey there, I am self-taught UX designer with a foundation in business
                      information technology. My blend of self-taught expertise and business technology background fuels my 
                      passion for creating user-centric designs that bridge the gap between technology and human experience.
+                    </p>  -->
+
+                    <button class="intro-section-me" id="intro-section-me"><a href="https://www.linkedin.com/in/lucky-sikolia/" target="_blank"><p>Snoop Around</p></a></button>
+                </div>
+
+                
+            </div>
+
+            <!-- //code to appear on smaller screens (intro section) -->
+            <div class="project-holder-landing-small" id="project-holder-landing-small">
+                <div class="intro-image-landing-small">
+                    <img src="../assets/photo-1611264327630-8090373c8cef-removebg-preview.png" alt="">
+                </div>
+                <div class="intro-text-landing-small">
+                   <h2 class="intro-text-landing-small-header">Lucky Sikolia</h2>
+                   <p class="intro-text-landing-small-paragraph">Designer + Developer
                     </p> 
                 </div>
             </div>
@@ -74,51 +105,102 @@
                 </div>
             </div> 
         </div>
+
+
+        <!-- 22:48HRS 4/7/2024 NEW CODE FOR THE PROJECT SECTION -->
+        <!-- Move from flex to grid. 
+            the idea is to have a grid with rows as the main layout then some rows can have columns inside to achieve the alternative 
+            style i want similar to that on https://www.yichenxie.com/ website 
+        -->
+        <div class="main-bottom-projects">
+            <!-- //code for two projects per row -->
+            <div class="two-project-display" id="two-project-display">
+                <div class="two-project-display-left">
+                    <a href="/html/KisasaSanaa.html" style="padding: 0;">
+                        <div class="project-display-image">
+                            <img src="/assets/cover_images/kisasa_cover_transparent_2.png" alt="" id="kisasa-cover" >
+                        </div>
+
+                        <div class="project-display-name">
+                            <div class="project-display-name-title">Kisasa Sanaa App</div>
+                            <div class="project-display-name-subtitle">A responsive web app with an accessible e-commerce space for local artists.</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="two-project-display-right">
+                    <a href="/html/SouthernFigure.html" style="padding: 0;">
+                        <div class="project-display-image">
+                            <img src="/assets/cover_images/sf-transparent.png" alt="" id="sf-cover">
+                        </div>
+                        <div class="project-display-name">
+                            <div class="project-display-name-title">Southern Front</div>
+                            <div class="project-display-name-subtitle">An e-commerce website helps women find their dream motorcycle</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- this is improved code on the project holder section -->
         
         <!-- this is broken code. it is meant to have a simple display of projects that link to the project project project page. 
         Work on this when you get back -->
-        <div id="project" class="projects-section">
-            <div class="project-page-container">
-                <!-- add link to first project page -->
+        <!-- <div id="project" class="projects-section"> -->
+            <!-- <div class="project-page-container">
+                 add link to first project page -->
                 <!-- projects alternate in two pairs and one long horizontal stack think of brick stacking on a building -->
                 
                 <!-- hald card (2 cards in a row)  -->
-                <div class="halfcard-holder">
-                    <!-- link to first project -->
-                    <link rel="preload" as="image" href="/assets/sf-cover-image.png">  <!--this is code for image preloading-->
+                <!-- <div class="halfcard-holder"> -->
+                    <!-- link to second project -->
+                    <!-- <link rel="preload" as="image" href="/assets/cover_images/kisasa_cover_transparent_2.png">  this is code for image preloading -->
+                    <!-- <a href="/html/KisasaSanaa.html" class="w-inline-block"> -->
+
+                        <!-- <div class="project-image-container"> -->
+                            <!-- <img src="/assets/cover_images/kisasa_cover_transparent_2.png" alt=""> -->
+                        <!-- </div>
+                        <div class="project-name">
+                            <div class="project-title">Kisasa Sanaa App</div>
+                            <div class="project-subtitle">MOBILE AND WEB DESIGN</div>
+                        </div>
+                    </a> -->
+
+                    <!-- <link rel="preload" as="image" href="/assets/sf-cover-image.png">  this is code for image preloading -->
+                    <!-- link to first project  -->
+                    <!-- <link rel="preload" as="image" href="/assets/cover_images/sf-transparent.png">
                     <a href="/html/SouthernFigure.html" class="w-inline-block grid-wrapper">
 
                         <div class="project-image-container">
-                            <img src="/assets/sf-cover-image.png" alt="">
+                            <img src="/assets/cover_images/sf-transparent.png" alt="">
                         </div>
                         <div class="project-name">
                             <div class="project-title">Southern Front</div>
                             <div class="project-subtitle"> WEB DESIGN</div>
                         </div>
                     </a>
-
-                    <!-- link to second project  -->
-                    <a href="#" class="w-inline-block"></a>
-                </div>
+                </div> --> 
 
                 <!-- full card holder (1 horizontal card in a row) -->
-                <div class="fullcard-holder">
+                <!-- <div class="fullcard-holder"> -->
                     <!-- add third project -->
-                    <a href="#" class="wide-block w-inline-block">
+                    <!-- <a href="#" class="wide-block w-inline-block">
                         <div class="projectcard-half"></div>
                     </a>                        
-                </div>
+                </div> -->
 
                 <!-- //add fouth and fifth project half card -->
 
-                <div class="wide-card">
+                <!-- <div class="wide-card"> -->
                     <!-- insert image -->
-                    <a href="/project/" class="wide-card-template">
+                    <!-- <a href="/project/" class="wide-card-template">
                         <div></div>
-                    </a>
-                </div>
-            </div>
-        </div>
+                    </a> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
     </main>
 
     <footer>

@@ -80,60 +80,38 @@ main{
     // min-height: auto;
 }
 
-.main-top {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-    min-width: 105vh;
 
-    img {
-        width: auto;
-        margin-top: -45px;
-    }
-
-    .project-holder {
-        position: relative;
-        // margin-top: -10px;
-        margin-bottom: -30px;
-    }
+// THIS IS NEW CODE 4/7/2024 19:12
+.main-top-landing {
+    height: auto;
+    padding: 5px 0px;
+    margin: 0 auto;
 }
 
-
-
-.project-holder {
-    display: flex;
-    align-items: flex-end; 
-
-    // width: 100%;
-
-    // position: sticky;
-    flex-direction: row;
-    padding-left: 15%;
-    // margin-top: -70px; this code interrupts the functionality of the links in the header/navbar by covering it
+// THIS IS NEW CODE 4/7/2024 19:12
+.project-holder-landing {
+    // using grid instead of flex
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    // gap: 4px;
+    align-items: center;
+    height: 74vh;
+    width: auto;
+    // margin: 0 auto;
 }
-
-.intro-text {
-    position: relative;
-    display: flex;
-    margin-right: 5vw;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 700px;
-    z-index: 1;
-    will-change: transform;
-    transform: translate3d(-1.9996%, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
-    // padding: 18% 2%;
-    padding-bottom: 18%;
-    padding-left: 2%;
-    padding-right: 2%;
+.intro-image-landing {
+    justify-self: end;
+    height: auto;
+}
+.intro-text-landing {
+    justify-self: start;
+    padding: 0 50px;
 
     #{&}-header{
         font-weight: map-get($font-weights, extra-bold);
         font-family: $secondary-font2;
-        font-size: 74px;
+        // font-size: 72px;
+        font-size: 4.5rem;
         margin-bottom: 5px;
         padding-bottom: 25px;
         letter-spacing: 1px;
@@ -144,9 +122,39 @@ main{
     #{&}-paragraph{
         margin-top: 10px;
         color: map-get($text-color, primary);
-        font-size: 16px;
+        font-size: 15px;
         line-height: 30px;
+        padding-right: 20%;
     }
+}
+
+//button styling
+#intro-section-me {
+    background-color: #100303;
+    // background-color: #e6cac3;
+    // height: 40%;
+    padding: 1.8% 2%;
+    width: auto;
+    margin-top: 5%;
+    border: none;
+    transition: transform 0.3s ease-in-out; 
+
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        color: map-get($text-color, secondary);
+        // color: #e6cac3;
+        font-family: $secondary-font2;
+        font-size: 1.01em;
+        font-weight: 500;
+    }
+}
+
+#intro-section-me:hover {
+    transform: scale(0.9);
 }
 
 //marquee styling
@@ -185,11 +193,135 @@ main{
 
 
 
+// THIS IS NEW CODE FOR THE PROJECT SECTION 4/7/2024 22:57hrs
+// code for the bottom half of the page (footer not included)
+.main-bottom-projects {
+    height: auto;
+    padding: 5px 0px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+// code for two projects per row
+.two-project-display {
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    height: 60vh; ///consider adjusting if its too large or too small
+
+    margin-top: 2%;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 0;
+
+    #{&}-left {
+        width: 49vw;
+        height: 65vh;
+    }
+
+    #{&}-right {
+        width: 49vw;
+        height: 65vh;
+    }
+
+    .project-display-image {
+        height:55vh;
+        background-size: cover;
+        // background-color: antiquewhite;
+        background-color: #e6cac3;
+        transition: background-color .3s ease-in-out;
+    }
+
+    .project-display-name {
+        #{&}-title{
+            text-transform: capitalize;
+        }
+        #{&}-subtitle{
+            text-align: center;
+        }
+    }
+    
+}
+
+.two-project-display-left, .two-project-display-right {
+    transition: transform 0.4s ease-in-out; /* Smooth transition effect */
+}
+
+
+.two-project-display-right:hover {
+    transform: scale(0.9) ; /* Scale down the image on hover (inverse zoom) */
+}
+.two-project-display-left:hover {
+    transform: scale(0.9); /* Scale down the image on hover (inverse zoom) */
+}
+
+.project-display-image{
+    img {
+        // width: 100vh;
+        // height: 50vh;
+        justify-items: center;
+        // display: grid;
+        // align-items: center;
+
+        padding-top: 5%;
+        // padding-right: 50%;
+
+    }
+}
+
+// NEW CODE FOR THE DISPLAY NAME SECTION
+.project-display-name {
+    // padding-bottom: 5%;
+    margin-bottom: 5%;
+
+    #{&}-title{
+        font-weight: map-get($font-weights, bold);
+        font-size: 1.1em;
+        text-transform: uppercase;
+        padding-left: 2%;
+        padding-top: 1%;
+    }
+    #{&}-subtitle{
+        padding-left: 2%;
+        font-weight: map-get($font-weights, regular);
+        opacity: 80%;
+        font-size: 0.8em;
+        padding-top: 0;
+        padding-bottom: 2%;
+        line-height: 20px;
+    }
+}
+
+
+
+.project-display-image:hover {
+    // background-color: burlywood;
+    background-color: #bfbac4;
+}
 
 
 
 
-//code for project section
+
+///NEW CODE FOR THE COVER IMAGE TAG
+#kisasa-cover{
+    width: 60%;
+    // height: 60vh;
+    padding-left: 16%;
+    padding-top: 2%;
+}
+#sf-cover {
+    width: 85%;
+    padding-left: 5%;
+}
+
+
+
+
+
+
+//code for project section. TO BE DELETED 6/7/2024 13:22
 .projects-section{
     width: 100%;
     margin-top: 0;
@@ -203,6 +335,7 @@ main{
         width: 50vw;
         height: 100%;
         background-size: cover;
+        background-color: antiquewhite;
         display: flex;
         position: relative;
     }
@@ -212,7 +345,6 @@ main{
         margin-bottom: 10px;
     }
 } 
-
 .project-page-container {
     width: 100%;
     max-width: none;
@@ -239,7 +371,6 @@ main{
     }
 
 }
-
 .project-name {
     margin-left: 30px;
     margin-bottom: 20px;
@@ -267,8 +398,10 @@ main{
 
 
 
-//responsive to resizing
 
+
+//responsive to resizing
+//CONSIDER REMOVING AFTER REDOING THE PROJECT SECTION
 /* Styles for smartphones (max-width 576px) */
 @media (max-width: 576px) {
     .main-top, .projects-section{
@@ -277,15 +410,11 @@ main{
     //   padding: 0 30px 0;
     }
 
+    //irrelevant code
     .marquee-horizontal {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-    }
-
-    .main-top{
-        padding: 0;
-        margin-left: -10%;
     }
     
     
@@ -302,35 +431,187 @@ main{
     // main {
     //     min-height: 100vh;
     // }
+
+
 }
+
+
+
+
 
 
 
 // responsive to resizing
-/* Styles for tablets (min-width 577px and max-width 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-    .main-top, .projects-section, .marquee-horizontal{
-      flex-direction: row;
+@media only screen and (max-width: 764px) {
+
+    //code for hiding intro on smaller screens
+    #project-holder-landing {
+        display: none;
+    }
+
+    .project-holder-landing-small {
+        display: grid;
+        padding-bottom: 50px;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+    .intro-image-landing-small {
+        justify-self: center;
+        img {
+            height: 55vh;
+        }
+    }
+    .intro-text-landing-small {
+        justify-self: start;
+        padding-left: 8%;
+
+        #{&}-header {
+        font-weight: map-get($font-weights, extra-bold);
+        font-family: $secondary-font2;
+        font-size: 40px;
+        margin-bottom: 2px;
+        padding-bottom: 18px;
+        letter-spacing: 1px;
+        }
+
+        #{&}-paragraph{
+            color: map-get($text-color, primary);
+            font-size: 18px;
+            line-height: 30px;
+            opacity: 80%;
+        }
+    }
+
+    .main-top-landing {
+        padding: 5px 0px;
+    }
+
+    .two-project-display {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: 90vh;
+
+        #{&}-left{
+            width: auto;
+            height: 30vh;
+            padding: 5% 6%;
+            margin: 2% 0;
+            margin-left: 2%;
+        }
+        #{&}-right{
+            width: auto;
+            height: 30vh;
+            padding: 5% 6%;
+            margin: 2% 0;
+            margin-left: 2%;
+        }
+
+        .project-display-image {
+            height: 35vh;
+
+            img {
+                padding-left: 0;
+            }
+        }
+    }
+
+    #kisasa-cover {
+        width: 80%;
+        padding-left: 8%;
+        padding-top: 5%;
+    }
+
+    #sf-cover {
+        width: 95%;
+        padding-left: 2%;
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #kisasa-cover {
+        padding-top: 10%;
+    }
+    
+}
+
+@media only screen and (min-width: 500px) {
+
+    //code for hiding intro on smaller screens
+    #project-holder-landing-small {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width:765px) and (max-width:992px){
+    .intro-text-landing {
+        #{&}-header {
+            font-size: 3.1rem;
+        }
+        #{&}-paragraph{
+            padding-right: 0;
+        }
+    }
+
+    .two-project-display {
+        height: 65vh;
+    }  
+
+    #kisasa-cover {
+        width: 90%;
+        padding-left: 6%;
+        padding-top: 10%;
+    }
+    #sf-cover {
+        width: 98%;
+        padding-left: 2%;
+        padding-top: 25%;
+    }
+}
+
+/* Mobile First development */
+@media only screen and (max-width: 768px) {
+    .marquee-horizontal{
       justify-content: space-between;
     }
 }
 
-/* Styles for desktops (min-width 769px) */
-@media (min-width: 769px) {
-    .main-top, .projects-section, .marquee-horizontal{
-      display: flex;
-      justify-content: space-between;
-    }
-}
 
 //prevent heading from overlapping when screen collapse
 /* For screens wider than 768px */
-@media (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     body {  //unsure what this code does
         // width: 150px;
         // height: 150px;
         width: 100vw;
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
     }
+
+    .main-top-landing {
+        padding: 5px 0px;
+    }
+}
+
+@media only screen and (min-width: 993px)and (max-width: 1440px) {
+    .two-project-display {
+        height: 40vh;
+
+        #{&}-left {
+            width: 49vw;
+            height: 40vh;
+        }
+    
+        #{&}-right {
+            width: 49vw;
+            height: 40vh;
+        }
+
+        .project-display-image {
+            height: 35vh;
+        }
+    }  
 }
